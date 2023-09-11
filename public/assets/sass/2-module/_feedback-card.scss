@@ -1,0 +1,35 @@
+.feedback-card {
+    display: grid;
+    gap: 1rem;
+    padding: 40px 20px;
+    position: relative;
+    isolation: isolate;
+    background: hsl(var(--canvas));
+    border-left: 5px solid rgb(var(--base));
+    @include md-screen {
+        padding: 60px 40px;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    &__text {
+        font-size: .875rem;
+        font-style: italic;
+    }
+    &__footer {
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: hsl(var(--white));
+        font-size: 34px;
+        color: rgb(var(--base));
+    }
+}

@@ -1,0 +1,16 @@
+.login-form {
+    padding: 50px 15px;
+    background: hsl(var(--white));
+
+    @include md-screen {
+        padding: 60px 30px;
+    }
+
+    @include lg-screen {
+        padding: 80px 40px;
+    }
+
+    @include xl-screen {
+        clip-path: polygon(100% 0, 100% 92%, 0 100%, 0 0);
+    }
+}

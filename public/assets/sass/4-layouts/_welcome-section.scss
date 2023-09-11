@@ -1,0 +1,23 @@
+.welcome-section {
+  position: relative;
+  isolation: isolate;
+  @include xlii-screen {
+    overflow: hidden;
+  }
+  &::after {
+    @include xlii-screen {
+      content: "";
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      left: -40px;
+      bottom: -90px;
+      background-image: url(../images/welcome-img.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: rotate(20deg);
+      opacity: 0.1;
+    }
+  }
+}

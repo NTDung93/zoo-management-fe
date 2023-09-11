@@ -1,0 +1,23 @@
+.upcoming-slider {
+    &__btn {
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        aspect-ratio: 1;
+        border: 1px solid transparent;
+        position: absolute;
+        top: calc(100% + 15px);
+        font-size: 18px;
+        background: rgb(var(--base));
+        color: hsl(var(--white));
+        transition: all .3s ease;
+        &-next {
+            left: 45px;
+        }
+        &:hover {
+            border: 1px solid hsl(var(--white));
+            background: hsl(var(--black));
+        }
+    }
+}

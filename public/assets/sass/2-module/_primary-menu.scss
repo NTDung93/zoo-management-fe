@@ -1,0 +1,203 @@
+.primary-menu {
+  flex-direction: column;
+  gap: 0;
+  @include lg-screen {
+    flex-direction: row;
+  }
+  &--dark {
+    background: hsl(var(--dark));
+    .primary-menu__link {
+      @include lg-screen {
+        color: hsl(var(--white));
+      }
+    }
+  }
+  &__list {
+    position: relative;
+    @include lg-screen {
+      margin-right: 1rem;
+      &:first-child {
+        padding-left: 1rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @include xl-screen {
+      margin-right: 1.5rem;
+    }
+    &.has-sub {
+      &:hover {
+        .primary-menu__link {
+          border-bottom: 1px solid transparent;
+          @include lg-screen {
+            border-bottom: none;
+            color: rgb(var(--base));
+          }
+          &::after {
+            @include lg-screen {
+              content: "\f106";
+            }
+          }
+        }
+        .primary-menu__sub {
+          @include lg-screen {
+            top: 100% !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            height: auto !important;
+            z-index: 9999 !important;
+          }
+        }
+      }
+      .primary-menu__link {
+        &::after {
+          content: "\f107";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          line-height: 1;
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          font-size: 16px;
+          @include lg-screen {
+            position: relative;
+            right: -5px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px solid hsl(var(--dark)/.1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: hsl(var(--dark));
+    @include lg-screen {
+      color: hsl(var(--white));
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: 500;
+      border-bottom: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &:hover {
+      color: hsl(var(--accent-200));
+      text-decoration: none;
+      @include lg-screen {
+        color: rgb(var(--base));
+      }
+    }
+  }
+  &--alt {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include lg-screen {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .primary-menu__list {
+      margin-bottom: 0.5rem;
+      @include lg-screen {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .list--row__item {
+      margin-right: 0;
+      @include lg-screen {
+        margin-right: 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__sub {
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    z-index: -9999;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s ease;
+    @include lg-screen {
+      min-width: 220px;
+      height: auto;
+      padding: 15px;
+      position: absolute;
+      left: 50%;
+      top: calc(100% + 20px);
+      transform: translateX(-50%);
+      margin-left: 0;
+      margin-right: 0;
+      background-color: hsl(var(--white));
+      border-radius: 5px;
+      box-shadow: 0 5px 15px hsl(var(--dark)/.4);
+      &::after {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid hsl(var(--light));
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &-list {
+      border-bottom: 1px solid rgb(var(--base)/.5);
+      @include lg-screen {
+        border-bottom: 1px solid hsl(var(--border));
+        &:hover {
+          border-bottom: 1px solid transparent;
+        }
+      }
+      &:first-child {
+        border-top: none;
+        .primary-menu__sub-link {
+          border-radius: 3px 3px 0 0;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+        .primary-menu__sub-link {
+          border-radius: 0 0 3px 3px;
+        }
+      }
+    }
+    &-link {
+      display: block;
+      padding: 8px 14px;
+      background-color: rgb(var(--base));
+      color: hsl(var(--white));
+      transition: all 0.3s ease;
+      position: relative;
+      @include lg-screen {
+        background-color: hsl(var(--white));
+        color: hsl(var(--accent-600));
+        border-radius: 3px !important;
+        text-align: center;
+      }
+      &:hover {
+        color: hsl(var(--white));
+        @include lg-screen {
+          color: hsl(var(--white));
+          background-color: rgb(var(--base));
+        }
+      }
+    }
+  }
+}

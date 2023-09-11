@@ -1,0 +1,38 @@
+.hero-slider {
+  position: relative;
+  isolation: isolate;
+  &__item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include xliv-screen {
+        overflow: hidden;
+    }
+   
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    @include md-screen {
+        min-height: 85vh;
+      }
+    @include xliv-screen {
+        position: relative;
+        isolation: isolate;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: hsl(var(--dark));
+            z-index: -1;
+        }
+    }
+  }
+}

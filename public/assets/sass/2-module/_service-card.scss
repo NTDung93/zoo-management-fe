@@ -1,0 +1,35 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 30px 15px;
+    background: hsl(var(--light));
+    @include md-screen {
+        padding: 30px;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__icon {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        aspect-ratio: 1;
+        background-image: url(../images/paw-img.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+    &__title {
+        margin: 0;
+    }
+}

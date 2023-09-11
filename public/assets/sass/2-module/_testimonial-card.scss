@@ -1,0 +1,34 @@
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 60px 30px;
+  border-radius: 5px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--canvas));
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1;
+    color: hsl(var(--canvas-700)/.7);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: -1;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &-info {
+      flex-grow: 1;
+    }
+  }
+  &__text {
+    font-style: italic;
+  }
+}

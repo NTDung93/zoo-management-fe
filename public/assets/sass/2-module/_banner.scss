@@ -1,0 +1,26 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(var(--black)/.5);
+    mix-blend-mode: darken;
+    z-index: -1;
+  }
+  &__content {
+    padding-top: clamp(180px, 8vw, 200px);
+    padding-bottom: clamp(100px, 8vw, 120px);
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

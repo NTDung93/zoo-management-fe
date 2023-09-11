@@ -1,0 +1,53 @@
+.footer-section {
+    @include lg-screen {
+        background: linear-gradient(to right, rgb(var(--base)) 34.5%, hsl(var(--black)) 34.5%);
+    }
+    @include xliii-screen {
+        background: linear-gradient(to right, rgb(var(--base)) 35%, hsl(var(--black)) 35%);
+    }
+    @include xliv-screen {
+        background: linear-gradient(to right, rgb(var(--base)) 36.5%, hsl(var(--black)) 36.5%);
+    }
+    @include xlv-screen {
+        background: linear-gradient(to right, rgb(var(--base)) 37%, hsl(var(--black)) 37%);
+    }
+    @include xxl-screen {
+        background: linear-gradient(to right, rgb(var(--base)) 38.8%, hsl(var(--black)) 38.8%);
+        position: relative;
+        isolation: isolate;
+        &::before {
+            content: url(../images/footer-img-1.png);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        &::after {
+            content: url(../images/footer-img-2.png);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    &__left {
+        padding-inline: 15px;
+        background: rgb(var(--base));
+        height: 100%;
+        @include lg-screen {
+            background: transparent;
+        }
+    }
+    &__right {
+        padding-inline: 15px;
+        background: hsl(var(--black));
+        height: 100%;
+        @include lg-screen {
+            padding-inline: 30px;
+            background: transparent;
+        }
+        @include xl-screen {
+            padding-inline: 60px;
+        }
+    }
+}

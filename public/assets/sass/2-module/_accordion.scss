@@ -1,0 +1,97 @@
+.custom--accordion {
+  .accordion-header {
+    margin-top: 0;
+  }
+  .accordion-item {
+    border-radius: 0 !important;
+    margin-bottom: 15px;
+    background: transparent;
+    color: hsl(var(--text));
+    border: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .accordion-button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--white));
+    color: hsl(var(--heading));
+    font-family: var(--body-font);
+    font-size: 18px;
+    font-weight: 500;
+    &:focus {
+      border-color: hsl(var(--border));
+      box-shadow: none;
+    }
+    &[aria-expanded="true"] {
+      &::after {
+        content: "\f068";
+      }
+    }
+    &[aria-expanded="false"] {
+      &::after {
+        content: "\f067";
+      }
+    }
+    &::after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      background-color: rgb(var(--base));
+      text-align: center;
+      background-image: initial !important;
+      transform: rotate(0deg) !important;
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      font-size: 24px;
+      color: hsl(var(--white));
+      line-height: 1;
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    border: 1px solid hsl(var(--border));
+    background-color: hsl(var(--white));
+    background-image: initial !important;
+    box-shadow: inset 0 0 0 transparent !important;
+    color: hsl(var(--heading));
+  }
+  .accordion-body {
+    margin-top: 15px;
+    padding: 0;
+  }
+  &-alt {
+    .accordion-button {
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      border-radius: 0;
+      padding-left: 0;
+      padding-right: 0;
+      &[aria-expanded="true"] {
+        &::after {
+          content: "\f107";
+        }
+      }
+      &[aria-expanded="false"] {
+        &::after {
+          content: "\f106";
+        }
+      }
+      &::after {
+        color: hsl(var(--heading));
+        background: hsl(var(--white));
+      }
+    }
+    .accordion-button:not(.collapsed) {
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      border-radius: 0;
+    }
+  }
+}
