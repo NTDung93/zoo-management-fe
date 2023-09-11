@@ -1,0 +1,53 @@
+.subscribe-section {
+  margin-bottom: clamp(60px, 8vw, 120px);
+
+  @include md-screen {
+    margin-top: -133px;
+    margin-bottom: 0;
+    clip-path: polygon(100% 0, 100% 80%, 48% 100%, 0 80%, 0 0);
+    position: relative;
+    transform: translateY(50%);
+    z-index: 1;
+
+  }
+
+  @include xl-screen {
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      content: url(../images/cta-shape.png);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content {
+    padding: 60px 20px;
+    background: rgb(var(--base));
+
+    @include md-screen {
+      padding: 60px 40px 80px;
+    }
+
+    @include xl-screen {
+      padding: 60px 80px 80px;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: -50px;
+        top: -20px;
+        transform: rotate(45deg);
+        width: 150px;
+        aspect-ratio: 1 /.5;
+        background: hsl(var(--dark));
+      }
+    }
+  }
+}

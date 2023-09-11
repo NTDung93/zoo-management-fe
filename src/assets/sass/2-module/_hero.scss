@@ -1,0 +1,45 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  &-alt {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/hero.png);
+    z-index: 2;
+    @include md-screen {
+      min-height: 85vh;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: hsl(var(--black) / 0.4);
+      mix-blend-mode: multiply;
+      z-index: -1;
+    }
+    .hero__content {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      margin-top: auto;
+      margin-bottom: auto;
+      &-subtitle {
+        color: hsl(var(--white));
+        span {
+          position: relative;
+          isolation: isolate;
+          color: rgb(var(--base));
+        }
+      }
+      &-title {
+        color: hsl(var(--white));
+      }
+      &-para {
+        max-width: 55ch;
+        color: hsl(var(--white));
+      }
+    }
+  }
+}

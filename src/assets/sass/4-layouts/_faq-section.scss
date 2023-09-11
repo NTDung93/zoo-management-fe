@@ -1,0 +1,15 @@
+.faq-section {
+    position: relative;
+    isolation: isolate;
+    &::after {
+        @include xxl-screen {
+            content: url(../images/fact-img-2.png);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: scale(0.6) translateX(30%);
+            z-index: -1;
+            opacity: .1;
+        }
+    }
+}

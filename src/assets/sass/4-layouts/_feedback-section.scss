@@ -1,0 +1,41 @@
+.feedback-section {
+  position: relative;
+  isolation: isolate;
+  background-image: url(../images/feedback-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include xxl-screen {
+      margin-bottom: 180px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.8;
+    background: hsl(var(--dark));
+    z-index: -1;
+  }
+  &__wrapper {
+    position: relative;
+    isolation: isolate;
+    &::before {
+      @include xxl-screen {
+        content: url(../images/feedback-img-1.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+    }
+    &::after {
+      @include xxl-screen {
+        content: url(../images/feedback-img-2.png);
+        position: absolute;
+        right: 0;
+        bottom: -7px;
+        z-index: -1;
+      }
+    }
+  }
+}

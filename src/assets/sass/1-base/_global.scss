@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+:root {
+  // TypoGraphy
+  --heading-font: 'Quicksand', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+
+  --d1: clamp(3.5rem, 6vw + 1rem, 6.25rem); //Max: 100px
+  --h1: clamp(2.8125rem, 4vw + 1rem, 4.209rem); //Min:45px - Max:67.34px
+  --h2: clamp(2.0625rem, 3vw + 1rem, 3.1575rem); //Min: 33px - Max: 50.52px
+  --h3: clamp(1.875rem, 2.7vw + 1rem, 2.369rem); //Min: 30px - Max: 37.90px
+  --h4: clamp(1.4rem, 2vw + 1rem, 1.777rem); //28.43px
+  --h5: 1.333rem; //21.33px
+  --h6: 1rem;
+
+  // Base Colors
+  --base: 134 195 5; // This will be DYNAMIC value
+  // Accent Color Shade 
+  --accent-h: 231;
+  --accent-s: 39%;
+  --accent-l: 25%;
+  --accent-100: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 70%);
+  --accent-200: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 60%);
+  --accent-300: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 50%);
+  --accent-400: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 40%);
+  --accent: var(--accent-h) var(--accent-s) var(--accent-l);
+  --accent-600: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 5%);
+  --accent-700: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 10%);
+  --accent-800: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 15%);
+  --accent-900: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 20%);
+  // Canvas Color Shade 
+  --canvas-h: 80;
+  --canvas-s: 43%;
+  --canvas-l: 98%;
+  --canvas-100: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) + 10%);
+  --canvas-200: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) + 8%);
+  --canvas-300: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) + 5%);
+  --canvas-400: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) + 4%);
+  --canvas: var(--canvas-h) var(--canvas-s) var(--canvas-l);
+  --canvas-600: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) - 8%);
+  --canvas-700: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) - 18%);
+  --canvas-800: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) - 28%);
+  --canvas-900: var(--canvas-h) var(--canvas-s) calc(var(--canvas-l) - 38%);
+  // Black Color Shade 
+  --black-h: 0;
+  --black-s: 0%;
+  --black-l: 0%;
+  --black-100: var(--black-h) var(--black-s) calc(var(--black-l) + 90%);
+  --black-200: var(--black-h) var(--black-s) calc(var(--black-l) + 80%);
+  --black-300: var(--black-h) var(--black-s) calc(var(--black-l) + 70%);
+  --black-400: var(--black-h) var(--black-s) calc(var(--black-l) + 60%);
+  --black: var(--black-h) var(--black-s) var(--black-l);
+  --black-600: var(--black-h) var(--black-s) calc(var(--black-l) + 50%);
+  --black-700: var(--black-h) var(--black-s) calc(var(--black-l) + 40%);
+  --black-800: var(--black-h) var(--black-s) calc(var(--black-l) + 30%);
+  --black-900: var(--black-h) var(--black-s) calc(var(--black-l) + 20%);
+  // White Color 
+  --white: 0 0% 100%;
+
+  --primary: 199 100% 60%;
+  --secondary: 210 11% 71%;
+  --success: 115 95% 43%;
+  --danger: 358 91% 66%;
+  --warning: 45 100% 51%;
+  --info: 188 92% 45%;
+  --dark: 79 100% 4%;
+
+  --text: 0 0% 46%;
+  --heading: 79 100% 4%;
+  --border: 0 0% 88%;
+  --light: 210 33% 98%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  background: hsl(var(--white));
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsl(var(--text));
+}
+
+// Typography
+p {
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.5rem 0 1rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.15;
+  color: hsl(var(--dark));
+  
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+  letter-spacing: .05em;
+}
+.xsm-text {
+  font-size: 12px;
+}
+small,
+.sm-text {
+  font-size: 14px;
+}
+.lg-text {
+  font-size: 18px;
+}
+.xl-text {
+  font-size: 20px;
+}
+.xxl-text {
+  font-size: 24px;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.fw-md {
+  font-weight: 500;
+}
+.lh-1 {
+  line-height: 1;
+}
+.hr {
+  background-color: rgb(var(--base));
+}
+
+// Button Default
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+.btn:focus,
+.btn.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// Form Control Default
+input:focus {
+  outline: none;
+}
+.form-control {
+  border: 1px solid hsl(var(--black)/.1);
+}
+
+textarea {
+  resize: none;
+}
+
+.container-restricted {
+  @include xliv-screen {
+    max-width: 1540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

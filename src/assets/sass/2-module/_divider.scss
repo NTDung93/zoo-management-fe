@@ -1,0 +1,29 @@
+.divider {
+    overflow: hidden;
+    &__content {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-family: var(--heading-font);
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45%;
+            height: 1px;
+            background: hsl(var(--border)/.5);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45%;
+            height: 1px;
+            background: hsl(var(--border)/.5);
+        }
+    }
+}

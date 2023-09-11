@@ -1,0 +1,8 @@
+.zoo-box {
+    background: hsl(var(--light));
+    border-radius: .25rem;
+    padding: 30px 15px;
+    @include md-screen {
+        padding: 30px;
+    }
+}

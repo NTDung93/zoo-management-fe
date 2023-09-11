@@ -1,0 +1,17 @@
+.widget {
+  padding: 30px 15px;
+  border-top: 1px solid rgb(var(--base)/.5);
+  background: hsl(var(--light));
+  @include xlii-screen {
+    padding: 30px;
+  }
+  &__title {
+    margin-top: 0;
+  }
+  &__link {
+    color: hsl(var(--canvas-200));
+    &:hover {
+      color: hsl(var(--accent-400));
+    }
+  }
+}

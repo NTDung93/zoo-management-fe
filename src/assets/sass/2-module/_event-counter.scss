@@ -1,0 +1,32 @@
+.event-counter {
+    position: relative;
+    isolation: isolate;
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .8rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        @include md-screen {
+            gap: 1.5rem;
+            bottom: 30px;
+        }
+    }
+    &__item {
+        width: 80px;
+        aspect-ratio: 1;
+        display: grid;
+        place-content: center;
+        background: rgb(var(--base));
+        @include md-screen {
+            width: 100px;
+        }
+    }
+}

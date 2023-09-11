@@ -1,0 +1,40 @@
+.membership-card {
+    @include md-screen {
+        display: flex;
+        gap: 1.5rem;
+    }
+    &__img {
+        @include md-screen {
+            width: 45%;
+            flex-shrink: 0;
+        }
+        @include lg-screen {
+            width: 40%;
+        }
+        @include xl-screen {
+            width: 45%;
+        }
+        @include xlii-screen {
+            width: 50%;
+        }
+        &-is {
+            width: 100%;
+            @include md-screen {
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__content {
+        @include md-screen {
+            flex-grow: 1;
+        }
+    }
+    &__price {
+        color: rgb(var(--base));
+    }
+    &__title {
+        margin-top: 0;
+    }
+}

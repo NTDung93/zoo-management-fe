@@ -1,0 +1,31 @@
+.custom--blockquote {
+    margin-bottom: 0;
+    padding: 30px 15px;
+    border-left: 3px solid rgb(var(--base));
+    position: relative;
+    isolation: isolate;
+    background: hsl(var(--light));
+    font-size: 1rem;
+    font-style: italic;
+    @include iphn-plus {
+        padding: 30px;
+    }
+    @include lg-screen {
+        padding: 30px 40px;
+    }
+
+    &::before {
+        content: "\f10e";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 1;
+        color: rgb(var(--base));
+        @include lg-screen {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+}

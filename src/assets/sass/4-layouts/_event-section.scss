@@ -1,0 +1,23 @@
+.event-section {
+  background: hsl(var(--dark));
+  position: relative;
+  isolation: isolate;
+
+  &::after {
+    @include xxl-screen {
+      content: url(../images/event-bg.png);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__content {
+    @include lg-screen {
+      padding-left: 30px;
+    }
+    @include xl-screen {
+      padding-left: 100px;
+    }
+  }
+}
