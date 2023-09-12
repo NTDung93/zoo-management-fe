@@ -1,0 +1,52 @@
+.event-card {
+  @include md-screen {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__img {
+    position: relative;
+    isolation: isolate;
+    @include md-screen {
+      width: 45%;
+      flex-shrink: 0;
+    }
+    @include lg-screen {
+      width: 40%;
+    }
+    @include xl-screen {
+      width: 45%;
+    }
+    &-is {
+      width: 100%;
+      object-fit: cover;
+      @include md-screen {
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+  &__date {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    background: rgb(var(--base));
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+  &__content {
+    @include md-screen {
+      flex-grow: 1;
+    }
+  }
+  &__title {
+    &-link {
+      color: hsl(var(--dark));
+      &:hover {
+        color: rgb(var(--base));
+      }
+    }
+  }
+}

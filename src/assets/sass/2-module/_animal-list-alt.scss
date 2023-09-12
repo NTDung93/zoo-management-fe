@@ -1,0 +1,18 @@
+.animal-list-alt {
+  @include md-screen {
+    padding: 0;
+    position: relative;
+    transform: translateY(-42.5%);
+    z-index: 2;
+    margin-bottom: -66px;
+  }
+  @include lg-screen {
+    margin-bottom: -72px;
+  }
+  @include xl-screen {
+    margin-bottom: -85px;
+  }
+  @include xlii-screen {
+    margin-bottom: -90px;
+  }
+}

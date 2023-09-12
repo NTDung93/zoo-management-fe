@@ -1,0 +1,53 @@
+.blog-post {
+  position: relative;
+  isolation: isolate;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    background-image: linear-gradient(transparent, hsl(var(--dark)));
+  }
+  &__date {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    background: rgb(var(--base));
+  }
+  &__title {
+    margin-top: 0;
+    &-link {
+      color: hsl(var(--white));
+      &:hover {
+        color: rgb(var(--base));
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+.blog-share {
+  padding: 15px ;
+  background: rgb(var(--base));
+  @include xl-screen {
+    padding: 15px 30px;
+  }
+  span {
+    color: hsl(var(--white));
+  }
+  a {
+    color: hsl(var(--white));
+    &:hover {
+      background: hsl(var(--white));
+      color: rgb(var(--base));
+    }
+  }
+}

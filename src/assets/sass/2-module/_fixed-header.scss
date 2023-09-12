@@ -1,0 +1,20 @@
+.fixed-header {
+    
+    .header--primary {
+        position: sticky;
+        top: 0;
+        background: hsl(var(--dark));
+        box-shadow: 0 10px 24px hsl(var(--dark)/.1);
+    }
+    .header--secondary {
+        position: fixed;
+        top: 0;
+        box-shadow: 0 10px 24px hsl(var(--dark)/.1);
+        background: hsl(var(--dark)/.5);
+        backdrop-filter: blur(10px);
+        @include lg-screen {
+            background: hsl(var(--white));
+            backdrop-filter: blur(0px);
+        }
+    }
+}

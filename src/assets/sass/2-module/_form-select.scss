@@ -1,0 +1,40 @@
+.form--select {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    content: "\f107";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    color: hsl(var(--dark));
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    background: hsl(var(--light));
+    display: grid;
+    place-items: center;
+    padding-inline: 15px;
+    border-radius: 0 0.25rem 0.25rem 0;
+    border: 1px solid hsl(var(--border) / 0.8);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .form-select {
+    height: 50px;
+    border-radius: 0.25rem;
+    padding-right: 46px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid hsl(var(--border) / 0.8);
+    background: hsl(var(--white));
+    color: hsl(var(--dark));
+    &:focus {
+      outline: none;
+      border: 1px solid hsl(var(--border) / 0.8);
+      background: hsl(var(--white));
+      box-shadow: none;
+      color: hsl(var(--dark));
+    }
+  }
+}

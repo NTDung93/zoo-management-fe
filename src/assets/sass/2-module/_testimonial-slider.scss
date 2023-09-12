@@ -1,0 +1,42 @@
+.testimonial-slider {
+  &__item {
+    padding-left: 5px;
+    padding-right: 5px;
+    @include lg-screen {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: rgb(var(--base));
+    font-size: 24px;
+    color: hsl(var(--white));
+    transition: all .3s ease;
+    position: absolute;
+    bottom: 0;
+    &:hover {
+        background: hsl(var(--black));
+    }
+    &-prev {
+      right: calc(150% + 60px);
+      @include xl-screen {
+          right: calc(138% + 60px);
+      }
+      @include xlii-screen {
+          right: calc(140% + 60px);
+      }
+    }
+    &-next {
+      right: 150%;
+      @include xl-screen {
+          right: 140%;
+      }
+    }
+  }
+}

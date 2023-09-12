@@ -1,0 +1,11 @@
+.map-view {
+    background: hsl(var(--light));
+    &__frame {
+        width: 100%;
+        height: 300px;
+        mix-blend-mode: luminosity;
+        @include md-screen {
+            height: 600px;
+        }
+    }
+}

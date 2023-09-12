@@ -1,0 +1,12 @@
+.client-card {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/0.6;
+  text-align: center;
+  border: 1px solid hsl(var(--border) / 0.5);
+  &__img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+  }
+}

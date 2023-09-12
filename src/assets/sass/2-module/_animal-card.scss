@@ -1,0 +1,11 @@
+.animal-card {
+    &__img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    &__body {
+        padding: 30px 15px;
+        background: hsl(var(--light));
+    }
+}

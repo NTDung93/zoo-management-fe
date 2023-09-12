@@ -1,0 +1,63 @@
+.animal-list {
+  @include xliv-screen {
+    margin-top: -7px;
+  }
+  &__slider {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgb(var(--base));
+    &-item {
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &-img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__name {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: hsl(var(--white));
+  }
+  &__btn {
+    width: 45px;
+    height: 45px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    outline: 5px solid hsl(var(--white));
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(var(--base));
+    font-size: 20px;
+    color: hsl(var(--white));
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 1;
+    &:hover {
+      background: hsl(var(--white));
+      color: rgb(var(--base));
+      outline: 5px solid rgb(var(--base));
+    }
+    &:focus {
+      background: hsl(var(--white));
+      color: rgb(var(--base));
+      outline: 5px solid rgb(var(--base)) !important;
+    }
+    &-prev {
+      left: -25px;
+    }
+    &-next {
+      right: -25px;
+    }
+  }
+}

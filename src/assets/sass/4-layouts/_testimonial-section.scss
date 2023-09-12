@@ -1,0 +1,35 @@
+.testimonial-section {
+  position: relative;
+  isolation: isolate;
+  background: hsl(var(--canvas));
+  &::before {
+    @include xxl-screen {
+      content: "";
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: url(../images/welcome-img.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+  }
+  &::after {
+    @include xxl-screen {
+      content: "";
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+      background-image: url(../images/feedback-img-2.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+  }
+}

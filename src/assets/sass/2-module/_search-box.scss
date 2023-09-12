@@ -1,0 +1,23 @@
+.search-box {
+    display: flex;
+    border: 1px solid hsl(var(--border));
+    &__control {
+        height: 50px;
+        flex-grow: 1;
+        border: none;
+        background: transparent;
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+    }
+    &__btn {
+        padding-inline: 15px;
+        flex-shrink: 0;
+        border: none;
+        background: transparent;
+        color: rgb(var(--base));
+    }
+}

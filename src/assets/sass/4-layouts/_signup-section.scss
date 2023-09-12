@@ -1,0 +1,21 @@
+.signup-section {
+    position: relative;
+    isolation: isolate;
+    background: rgb(var(--base));
+
+    @include xl-screen {
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 30%;
+            background-image: url(../images/signup-img.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+    }
+}
