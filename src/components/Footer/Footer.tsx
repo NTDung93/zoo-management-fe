@@ -22,7 +22,7 @@ const Footer = () => {
 										<span className='info-section__icon'>
 											<i className='far fa-envelope'></i>
 										</span>
-										<ul className='list' style={{ '--gap': '0.5rem' }}>
+										<ul className='list'>
 											<li>
 												<p className='mb-0 text--white t-short-para'>support24/7.com</p>
 											</li>
@@ -34,7 +34,7 @@ const Footer = () => {
 										<span className='info-section__icon'>
 											<i className='fas fa-phone-alt'></i>
 										</span>
-										<ul className='list' style={{ '--gap': '0.5rem' }}>
+										<ul className='list'>
 											<li>
 												<p className='mb-0 text--white t-short-para'>+123 - 456 - 789000</p>
 											</li>
@@ -42,7 +42,7 @@ const Footer = () => {
 									</div>
 								</li>
 								<li>
-									<ul className='list list--row' style={{ '--gap': '0.5rem' }}>
+									<ul className='list list--row'>
 										<li>
 											<a href='#' className='t-link icon icon--circle icon--xs expert-card__icon'>
 												<i className='fab fa-facebook-f'></i>
@@ -138,7 +138,7 @@ const Footer = () => {
 									<div className='list list--row justify-content-between'>
 										<div
 											className='list list--row align-items-center'
-											style={{ '--gap': '0.5rem' }}>
+										>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>
@@ -151,7 +151,7 @@ const Footer = () => {
 									<div className='list list--row justify-content-between'>
 										<div
 											className='list list--row align-items-center'
-											style={{ '--gap': '0.5rem' }}>
+										>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>
@@ -164,7 +164,7 @@ const Footer = () => {
 									<div className='list list--row justify-content-between'>
 										<div
 											className='list list--row align-items-center'
-											style={{ '--gap': '0.5rem' }}>
+										>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>
@@ -177,7 +177,7 @@ const Footer = () => {
 									<div className='list list--row justify-content-between'>
 										<div
 											className='list list--row align-items-center'
-											style={{ '--gap': '0.5rem' }}>
+										>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>
@@ -190,14 +190,6 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className='footer__copyright py-3'>
-				<p className='mb-0 sm-text text--white text-center'>
-					Copyright © 2022. All Rights Reserved By{' '}
-					<a href='#' className='t-link t-link--base text--base'>
-						ViserZoo
-					</a>
-				</p>
 			</div>
 		</footer>
 	);

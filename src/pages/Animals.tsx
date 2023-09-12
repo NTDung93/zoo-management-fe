@@ -1,6 +1,6 @@
-import Banner from '../components/Banner';
-import Footer from '../components/Footer';
-import Header2 from '../components/Header2';
+import Banner from '../components/Banner/Banner';
+import Footer from '../components/Footer/Footer';
+import Header2 from '../components/Header/Header2';
 
 const Animals = () => {
 	return (
