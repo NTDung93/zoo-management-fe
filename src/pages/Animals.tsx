@@ -6,7 +6,7 @@ const Animals = () => {
 	return (
 		<>
 			<Header2 />
-			<Banner />
+			<Banner pageName={'Animal'} singleName={'Animal'} />
 
 			<div className='section--sm section--top'>
 				<div className='section__head'>

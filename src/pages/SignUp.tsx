@@ -1,3 +1,5 @@
+import ImageBottom from "../components/Bottom/ImageBottom";
+
 export default function SignUp() {
     return (
         <>
@@ -97,6 +99,8 @@ export default function SignUp() {
                     </div>
                 </div>
             </div>
+
+            <ImageBottom/>
         </>
     )
 }

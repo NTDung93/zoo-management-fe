@@ -4,9 +4,8 @@ import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
 import Header2 from './components/Header/Header2';
 import HeaderTop from './components/Header/HeaderTop';
-import SignUp from './pages/SignUp';
-import ImageBottom from './components/Bottom/ImageBottom';
 import Subscribe from './components/Footer/Subscribe';
+import MemberShip from './pages/MemberShip';
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -24,9 +23,8 @@ function App() {
 					<>
 						<HeaderTop />
 						<Header2 />
-						<Banner pageName={'Sign up'} singleName={'sign up'} />
-						<SignUp />
-						<ImageBottom />
+						<Banner pageName={'Event Ticket'} singleName={'Event Ticket'} />
+						<MemberShip />
 						<Subscribe />
 						<Footer />
 					</>
