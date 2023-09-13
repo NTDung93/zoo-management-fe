@@ -15,6 +15,7 @@ import EventTicket from './pages/EventTicket';
 import Gallery from './pages/Gallery';
 import Membership from './components/MemberShip/Membership';
 import SignUp from './pages/SignUp';
+import MemberShipPlan from './components/MemberShip/MemberShipPlan';
 
 function App() {
 	// const [loading, setLoading] = useState(true);
@@ -43,7 +44,7 @@ function App() {
 			<HeaderTop />
 			<Header2 />
 			<Banner pageName={'Cart'} singleName={'Cart'} />
-			<SignUp />
+			<MemberShip />
 			<Subscribe />
 			<Footer />
 
