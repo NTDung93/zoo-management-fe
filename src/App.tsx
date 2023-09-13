@@ -16,38 +16,17 @@ import Gallery from './pages/Gallery';
 import Membership from './components/MemberShip/Membership';
 import SignUp from './pages/SignUp';
 import MemberShipPlan from './components/MemberShip/MemberShipPlan';
+import NewDetail from './pages/NewDetails';
 
 function App() {
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  // 	setTimeout(() => {
-  // 		setLoading(false);
-  // 	}, 500);
-  // }, []);
-  return (
-    <>
-      {/* {
-				loading ?
-					<Loader />
-					:
-					<>
-						<HeaderTop />
-						<Header2 />
-						<Banner pageName={'Event Ticket'} singleName={'Event Ticket'} />
-						<Animals />
-						<Subscribe />
-						<Footer />
-
-					</>
-			} */}
-
+	return (
+		<>
 			<HeaderTop />
 			<Header2 />
 			<Banner pageName={'Cart'} singleName={'Cart'} />
 			<MemberShip />
 			<Subscribe />
 			<Footer />
-
 		</>
 	);
 }
