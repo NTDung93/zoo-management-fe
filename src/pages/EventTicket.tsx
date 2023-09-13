@@ -228,7 +228,7 @@ export default function EventTicket() {
                                         <div className="blog-post__overlay">
                                             <div className="blog-post__date">
                                                 <div className="blog-post__date-content">
-                                                    <h5 className="mt-0 mb-1 text-center text--white">10</h5>
+                                                    <h5 className="mt-0 mb-1 text-center text--white">{10}</h5>
                                                     <h6 className="m-0 text-center text--white">MAY</h6>
                                                 </div>
                                             </div>
