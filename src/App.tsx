@@ -18,15 +18,15 @@ import SignUp from './pages/SignUp';
 import MemberShipPlan from './components/MemberShip/MemberShipPlan';
 
 function App() {
-	// const [loading, setLoading] = useState(true);
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setLoading(false);
-	// 	}, 500);
-	// }, []);
-	return (
-		<>
-			{/* {
+  // const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  // 	setTimeout(() => {
+  // 		setLoading(false);
+  // 	}, 500);
+  // }, []);
+  return (
+    <>
+      {/* {
 				loading ?
 					<Loader />
 					:
