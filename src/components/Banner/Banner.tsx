@@ -1,6 +1,6 @@
 interface Props {
-	pageName: string;
-	singleName: string;
+	pageName: string,
+	singleName: string,
 }
 
 const Banner = ({ pageName, singleName }: Props) => (
