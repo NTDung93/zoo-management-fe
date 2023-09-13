@@ -1,0 +1,82 @@
+.form--control {
+  height: 50px;
+  line-height: 38px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--white));
+  color: hsl(var(--heading));
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: hsl(var(--accent-300));
+    font-weight: 400;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--white));
+    box-shadow: none;
+    color: hsl(var(--heading));
+  }
+
+  &:-webkit-autofill {
+    -webkit-text-fill-color: hsl(var(--heading)) !important;
+    -webkit-box-shadow: 0 0 0px 1000px hsl(var(--white)) inset;
+  }
+
+  &[readonly] {
+    background: hsl(var(--accent-400));
+    border: 1px solid hsl(var(--accent-400));
+    color: hsl(var(--accent-900));
+
+    &::placeholder {
+      color: hsl(var(--accent));
+    }
+  }
+
+  &[disabled] {
+    background: hsl(var(--accent-400));
+    border: 1px solid hsl(var(--accent-400));
+    color: hsl(var(--accent-900));
+
+    &::placeholder {
+      color: hsl(var(--accent));
+    }
+  }
+
+  &[type="file"] {
+    &::-webkit-file-upload-button {
+      background: rgb(var(--base)) !important;
+      color: hsl(var(--accent-100)) !important;
+    }
+  }
+}
+
+textarea.form--control {
+  height: auto;
+  line-height: normal;
+  padding-top: 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--white));
+  color: hsl(var(--heading));
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: hsl(var(--accent-300));
+    font-weight: 400;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--white));
+    color: hsl(var(--heading));
+    box-shadow: none;
+  }
+}

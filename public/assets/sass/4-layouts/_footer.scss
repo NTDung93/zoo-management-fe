@@ -1,0 +1,29 @@
+.footer {
+    position: relative;
+    isolation: isolate;
+    background-image: url('../images/footer-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include md-screen {
+        padding-top: 130px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: hsl(var(--dark)/.9);
+        z-index: -1;
+    }
+    &__hr {
+        display: none;
+        @include lg-screen {
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    &__copyright {
+        background: hsl(var(--accent-900));
+    }
+}

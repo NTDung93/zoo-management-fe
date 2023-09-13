@@ -1,0 +1,21 @@
+.welcome-card {
+  @include xli-screen {
+    display: flex;
+    gap: 0.5rem;
+  }
+  @include xlii-screen {
+    gap: 1rem;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    background-image: url(../images/paw-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

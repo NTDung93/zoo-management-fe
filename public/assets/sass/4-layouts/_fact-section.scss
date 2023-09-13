@@ -1,0 +1,39 @@
+.fact-section-container {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    @include xxl-screen {
+      content: url(../images/fact-img-1.png);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+  }
+  &::after {
+    @include xxl-screen {
+      content: url(../images/fact-img-2.png);
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+      z-index: 1;
+    }
+  }
+}
+
+.fact-section {
+  position: relative;
+  isolation: isolate;
+  background-image: url(../images/fact-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--dark) / 0.65);
+    z-index: -1;
+  }
+}

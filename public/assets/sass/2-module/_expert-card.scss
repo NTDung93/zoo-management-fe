@@ -1,0 +1,43 @@
+.expert-card {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 110px;
+    padding: 40px 20px;
+    border-top: 5px solid rgb(var(--base));
+    background: hsl(var(--dark));
+    &__img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    &__body {
+        position: relative;
+        isolation: isolate;
+        margin-bottom: -150px;
+        &:hover {
+            .expert-card__overlay {
+                visibility: visible;
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+    }
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: rgb(var(--base)/.8);
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        transition: all .3s ease;
+    }
+    &__icon {
+        background: hsl(var(--white));
+        color: hsl(var(--text));
+        &:hover {
+            color: rgb(var(--base));
+        }
+    }
+}

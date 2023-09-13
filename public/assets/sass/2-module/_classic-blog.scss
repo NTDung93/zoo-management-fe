@@ -1,0 +1,49 @@
+.classic-blog {
+    &__link {
+        display: inline-block;
+    }
+
+    &__title {
+        display: inline-block;
+        color: hsl(var(--heading));
+
+        &:hover {
+            color: rgb(var(--base));
+        }
+    }
+
+    &__meta {
+        font-size: .875rem;
+        --gap: 1rem;
+        li {
+            position: relative;
+            isolation: isolate;
+            &::after {
+                content: '';
+                position: absolute;
+                left: calc(100% + .5rem);
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 14px;
+                background: hsl(var(--text));
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        &-link {
+            display: inline-block;
+            color: hsl(var(--heading));
+
+            &:hover {
+                color: rgb(var(--base));
+            }
+        }
+    }
+    &__body {
+        padding-top: 1.5rem;
+    }
+}

@@ -1,0 +1,50 @@
+.member-card {
+  position: relative;
+  isolation: isolate;
+  &:hover {
+    .member-card__overlay {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+    }
+}
+  &__img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    @include md-screen {
+      aspect-ratio: 1/1.5;
+    }
+    @include xl-screen {
+      aspect-ratio: 1/1.2;
+    }
+  }
+  &__content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, hsl(var(--black)));
+    @include xl-screen {
+      padding: 30px;
+    }
+  }
+  &__overlay {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--dark) / 0.5);
+    font-size: 40px;
+    line-height: 1;
+    color: hsl(var(--white));
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    &:hover {
+      color: hsl(var(--white));
+    }
+  }
+}

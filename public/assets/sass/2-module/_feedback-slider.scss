@@ -1,0 +1,17 @@
+.feedback-slider {
+    @include xxl-screen {
+        margin-bottom: -300px;
+    }
+    &__item {
+        margin-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        @include md-screen {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+    .slick-list {
+        margin-bottom: -30px;
+    }
+}

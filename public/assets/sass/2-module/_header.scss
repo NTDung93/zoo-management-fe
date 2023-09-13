@@ -1,0 +1,28 @@
+.header {
+  &--primary {
+    width: 100%;
+    padding: 10px 0;
+    position: sticky;
+    background: hsl(var(--dark));
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  &--secondary {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s ease;
+    &-container {
+      padding: 10px 15px;
+      @include lg-screen {
+        background: hsl(var(--white));
+        .primary-menu__link {
+          color: hsl(var(--dark));
+        }
+        .navs {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
