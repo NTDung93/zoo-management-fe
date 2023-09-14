@@ -136,12 +136,12 @@ export default function MemberShip() {
                 </div>
             </div>
 
-            <Feedback/>
+            <Feedback />
 
-            <MemberShipPlan/>
+            <MemberShipPlan />
 
-            <ImageSilderBottom/>
-            
+            <ImageSilderBottom />
+
         </>
     )
 }

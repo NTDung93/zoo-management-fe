@@ -56,7 +56,7 @@ const Header2 = () => {
                       <nav className="navs">
                         {/* Primary Menu  */}
                         <ul className="list primary-menu">
-                          <li className="primary-menu__list has-sub">
+                          <li className="primary-menu__list">
                             <a
                               href="#"
                               className="primary-menu__link text-capitalize"
@@ -64,7 +64,7 @@ const Header2 = () => {
                               {" "}
                               home{" "}
                             </a>
-                            <ul className="primary-menu__sub">
+                            {/* <ul className="primary-menu__sub">
                               <li className="primary-menu__sub-list">
                                 <a
                                   href="index.html"
@@ -81,7 +81,7 @@ const Header2 = () => {
                                   Home 2
                                 </a>
                               </li>
-                            </ul>
+                            </ul> */}
                           </li>
                           <li className="primary-menu__list has-sub">
                             <a
@@ -101,7 +101,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="member.html"
+                                  href="/member-ship"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Membership
@@ -109,7 +109,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="animal.html"
+                                  href="/animals"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Animals
@@ -125,7 +125,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="event.html"
+                                  href="/event"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Events
@@ -133,7 +133,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="event-details.html"
+                                  href="/event-detail"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Event Details
@@ -141,7 +141,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="event-ticket.html"
+                                  href="/event-ticket"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Event ticket
@@ -149,7 +149,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="cart.html"
+                                  href="/cart"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Cart
@@ -162,57 +162,23 @@ const Header2 = () => {
                               href="#"
                               className="primary-menu__link text-capitalize"
                             >
-                              Service
+                              News
                             </a>
                             <ul className="primary-menu__sub">
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="service.html"
+                                  href="/news"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
-                                  Service
+                                  News
                                 </a>
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="service-details.html"
+                                  href="/news-detail"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
-                                  Service details
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="primary-menu__list has-sub">
-                            <a
-                              href="#"
-                              className="primary-menu__link text-capitalize"
-                            >
-                              blog
-                            </a>
-                            <ul className="primary-menu__sub">
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="blog.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  blog
-                                </a>
-                              </li>
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="classic-blog.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  Classic blog
-                                </a>
-                              </li>
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="blog-details.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  blog details
+                                  News detail
                                 </a>
                               </li>
                             </ul>
@@ -235,7 +201,7 @@ const Header2 = () => {
                             <ul className="primary-menu__sub">
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="gallery.html"
+                                  href="/gallery"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Gallery
@@ -243,7 +209,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="ticket.html"
+                                  href="/ticket"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Buy Ticket
@@ -251,23 +217,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="faq.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  FAQ
-                                </a>
-                              </li>
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="policy.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  Privacy &amp; Policy
-                                </a>
-                              </li>
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="sign-in.html"
+                                  href="/sign-in"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Sign in
@@ -275,7 +225,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="sign-up.html"
+                                  href="/sign-up"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Sign Up

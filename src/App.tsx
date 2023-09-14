@@ -16,7 +16,8 @@ import Gallery from './pages/Gallery';
 import Membership from './components/MemberShip/Membership';
 import SignUp from './pages/SignUp';
 import MemberShipPlan from './components/MemberShip/MemberShipPlan';
-import NewDetail from './pages/NewDetails';
+import NewsDetail from './pages/NewsDetail';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 	return (
@@ -24,7 +25,7 @@ function App() {
 			<HeaderTop />
 			<Header2 />
 			<Banner pageName={'Cart'} singleName={'Cart'} />
-			<MemberShip />
+			<Outlet />
 			<Subscribe />
 			<Footer />
 		</>

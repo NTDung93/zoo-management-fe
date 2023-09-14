@@ -1,4 +1,3 @@
-import Header from '../components/Header/Header'
 import Banner from '../components/Banner/Banner'
 import ClientSlider from '../components/Client/ClientSlider'
 import Footer from '../components/Footer/Footer'
@@ -13,17 +12,16 @@ import Subscribe from '../components/Footer/Subscribe'
 const Event = () => {
   return (
     <>
-        <BackToTop />
-        <SearchPopup />
-        <HeaderTop />
-        <Header />
-        <Banner pageName={'Event'} singleName={'Event'} />
-        <EventSectionTop />
-        <EventSection />
-        <Membership />
-        <ClientSlider />
-        <Subscribe />
-        <Footer />
+      <BackToTop />
+      <SearchPopup />
+      <HeaderTop />
+      <Banner pageName={'Event'} singleName={'Event'} />
+      <EventSectionTop />
+      <EventSection />
+      <Membership />
+      <ClientSlider />
+      <Subscribe />
+      <Footer />
     </>
 
   )
