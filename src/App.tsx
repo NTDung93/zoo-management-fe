@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import Loader from './components/Loader/Loader';
+import SubscribeSection from './components/Animals/SubscribeSection';
+import BackToTop from './components/BackToTop/BackToTop';
 import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
 import Header2 from './components/Header/Header2';
