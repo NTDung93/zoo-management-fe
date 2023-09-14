@@ -1,9 +1,12 @@
+import Banner from "../components/Banner/Banner";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
 import Feedback from "../components/Feedback/Feedback";
 import MemberShipPlan from "../components/MemberShip/MemberShipPlan";
 export default function MemberShip() {
     return (
         <>
+			<Banner pageName={'Member ship'} singleName={'Member'} />
+
             <div className="section">
                 <div className="section__head">
                     <div className="container">

@@ -24,7 +24,6 @@ function App() {
 		<>
 			<HeaderTop />
 			<Header2 />
-			<Banner pageName={'Cart'} singleName={'Cart'} />
 			<Outlet />
 			<Subscribe />
 			<Footer />

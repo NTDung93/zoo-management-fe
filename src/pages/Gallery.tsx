@@ -1,8 +1,11 @@
+import Banner from "../components/Banner/Banner";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
 
 export default function Gallery() {
     return (
         <>
+            <Banner pageName={'Gallery'} singleName={'Gallery'} />
+
             <div className="section--sm section--top">
                 <div className="section__head">
                     <div className="container">
@@ -239,7 +242,7 @@ export default function Gallery() {
                 </div>
             </div>
 
-            <ImageSilderBottom/>
+            <ImageSilderBottom />
         </>
     )
 }

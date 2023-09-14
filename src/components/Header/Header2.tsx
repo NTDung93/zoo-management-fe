@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 const Header2 = () => {
   return (
     <>
@@ -59,30 +58,12 @@ const Header2 = () => {
                         <ul className="list primary-menu">
                           <li className="primary-menu__list">
                             <a
-                              href="#"
+                              href="/home"
                               className="primary-menu__link text-capitalize"
                             >
                               {" "}
                               home{" "}
                             </a>
-                            {/* <ul className="primary-menu__sub">
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="index.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  Home 1
-                                </a>
-                              </li>
-                              <li className="primary-menu__sub-list">
-                                <a
-                                  href="home-2.html"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  Home 2
-                                </a>
-                              </li>
-                            </ul> */}
                           </li>
                           <li className="primary-menu__list has-sub">
                             <a
@@ -118,7 +99,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="animal-details.html"
+                                  href="/animal-detail"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Animal Details
@@ -234,7 +215,7 @@ const Header2 = () => {
                               </li>
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="error.html"
+                                  href="/page-404"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   404

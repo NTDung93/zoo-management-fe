@@ -3,15 +3,17 @@ import BackToTop from '../components/BackToTop/BackToTop'
 import EventSectionTop from '../components/Events/EvenSectionTop'
 import EventSection from '../components/Events/EventSection'
 import ImageSilderBottom from '../components/Bottom/ImageSliderBottom'
+import Banner from '../components/Banner/Banner'
 
 const Event = () => {
   return (
     <>
-        <BackToTop />
-        <SearchPopup />
-        <EventSectionTop />
-        <EventSection />
-        <ImageSilderBottom />
+      <Banner pageName={'Events'} singleName={'Events'} />
+      <BackToTop />
+      <SearchPopup />
+      <EventSectionTop />
+      <EventSection />
+      <ImageSilderBottom />
     </>
 
   )

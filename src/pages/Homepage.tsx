@@ -1,4 +1,4 @@
-import Header from '../components/Header/Header';
+// import Header2 from '../components/Header/Header2';
 import AnimalSlider from '../components/Home/AnimalSlider';
 import BlogSection from '../components/Home/BlogSection';
 import EventSection from '../components/Home/EventSection';
@@ -11,10 +11,10 @@ import InfoSection from '../components/Home/InfoSection';
 import TicketSection from '../components/Home/TicketSection';
 import WelcomeSection from '../components/Home/WelcomeSection'; // Fix the import here
 
-function Homepage() {
+function HomePage() {
 	return (
 		<>
-			<Header />
+			{/* <Header2 /> */}
 			<HeroSilder />
 			<AnimalSlider />
 			<WelcomeSection />
@@ -30,4 +30,4 @@ function Homepage() {
 	);
 }
 
-export default Homepage;
+export default HomePage;

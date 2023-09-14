@@ -1,8 +1,11 @@
+import Banner from "../components/Banner/Banner";
 import ImageBottom from "../components/Bottom/ImageBottom";
 
 export default function Cart() {
     return (
         <>
+            <Banner pageName={'Cart'} singleName={'Cart'} />
+
             <div className="section--sm section--top">
                 <div className="container">
                     <div className="row g-4">
@@ -95,7 +98,7 @@ export default function Cart() {
                 </div>
             </div>
 
-            <ImageBottom/>
+            <ImageBottom />
         </>
     )
 }

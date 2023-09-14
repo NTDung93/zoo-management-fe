@@ -25,7 +25,7 @@ export default function HeaderTop() {
             </div>
             <div className="col-lg-4 bg-dark text-center">
               {/* Logo  */}
-              <a href="index.html" className="logo mx-auto">
+              <a href="/home" className="logo mx-auto">
                 <img
                   src="src/assets/images/logo.png"
                   alt="viserhyip"
@@ -38,7 +38,7 @@ export default function HeaderTop() {
               <ul className="list list--row justify-content-end">
                 <li>
                   <a
-                    href="sign-in.html"
+                    href="/sign-in"
                     className="t-link t-link--light text--white list list--row align-items-center"
                   >
                     <span className="d-block">

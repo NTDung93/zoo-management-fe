@@ -1,8 +1,11 @@
+import Banner from "../components/Banner/Banner";
 import ImageBottom from "../components/Bottom/ImageBottom";
 
 export default function SignUp() {
     return (
         <>
+            <Banner pageName={'Sign up'} singleName={'Sign up'} />
+
             <div className="section__head">
                 <div className="section signup-section">
                     <div className="container">
@@ -100,7 +103,7 @@ export default function SignUp() {
                 </div>
             </div>
 
-            <ImageBottom/>
+            <ImageBottom />
         </>
     )
 }
