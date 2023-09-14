@@ -4,12 +4,12 @@ import imgsection from "./../assets/images/event-img-7.png";
 import imgcate from "./../assets/images/people-5.jpg";
 import imgmemberCard from "./../assets/images/member-card-1.png";
 
-import Content from "./../components/NewDetail/Content";
-import NewCate from "./../components/NewDetail/NewCate";
-import Tags from "./../components/NewDetail/Tags";
+import Content from "../components/NewDetail/Content";
+import NewCate from "../components/NewDetail/NewCate";
+import Tags from "../components/NewDetail/Tags";
 interface NewDetailProps { }
 
-const NewDetail: FC<NewDetailProps> = ({ }) => {
+const NewsDetail: FC<NewDetailProps> = ({ }) => {
   return (
     <div className="section">
       <div className="container">
@@ -204,4 +204,4 @@ const NewDetail: FC<NewDetailProps> = ({ }) => {
   );
 };
 
-export default NewDetail;
+export default NewsDetail;
