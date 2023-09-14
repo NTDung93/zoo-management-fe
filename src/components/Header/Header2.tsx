@@ -167,7 +167,7 @@ const Header2 = () => {
                           </li>
                           <li className="primary-menu__list">
                             <a
-                              href="contact.html"
+                              href="/contact"
                               className="primary-menu__link text-capitalize"
                             >
                               Contact
