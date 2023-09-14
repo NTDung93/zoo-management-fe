@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SignInSection = () => {
   return (
     <div className="section__head">
