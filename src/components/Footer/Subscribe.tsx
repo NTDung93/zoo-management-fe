@@ -10,7 +10,7 @@ export default function SignUp() {
                   <div className="col-md-6">
                     <div className="text-center text-md-start d-grid gap-2">
                       {/* Logo  */}
-                      <a href="index.html" className="logo mx-auto ms-md-0">
+                      <a href="/home" className="logo mx-auto ms-md-0">
                         <img
                           src="src/assets/images/logo-alt.png"
                           alt="viserhyip"

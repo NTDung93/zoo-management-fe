@@ -22,7 +22,7 @@ const Footer = () => {
 										<span className='info-section__icon'>
 											<i className='far fa-envelope'></i>
 										</span>
-										<ul className='list'>
+										<ul className='list' >
 											<li>
 												<p className='mb-0 text--white t-short-para'>support24/7.com</p>
 											</li>
@@ -149,9 +149,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<div className='list list--row justify-content-between'>
-										<div
-											className='list list--row align-items-center'
-										>
+										<div className='list list--row align-items-center'>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>
@@ -162,9 +160,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<div className='list list--row justify-content-between'>
-										<div
-											className='list list--row align-items-center'
-										>
+										<div className='list list--row align-items-center'>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>
@@ -175,9 +171,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<div className='list list--row justify-content-between'>
-										<div
-											className='list list--row align-items-center'
-										>
+										<div className='list list--row align-items-center'>
 											<span className='text--base'>
 												<i className='far fa-clock'></i>
 											</span>

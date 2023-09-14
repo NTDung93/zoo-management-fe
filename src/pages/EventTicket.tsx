@@ -1,6 +1,10 @@
+import Banner from "../components/Banner/Banner";
+
 export default function EventTicket() {
     return (
         <>
+            <Banner pageName={'Event ticket'} singleName={'Event ticket'} />
+
             <div className="section">
                 <div className="container">
                     <div className="row g-4 justify-content-between">

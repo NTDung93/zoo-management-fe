@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import Loader from './components/Loader/Loader';
+import SubscribeSection from './components/Animals/SubscribeSection';
+import BackToTop from './components/BackToTop/BackToTop';
 import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
 import Header2 from './components/Header/Header2';
@@ -16,15 +16,15 @@ import Gallery from './pages/Gallery';
 import Membership from './components/MemberShip/Membership';
 import SignUp from './pages/SignUp';
 import MemberShipPlan from './components/MemberShip/MemberShipPlan';
-import NewDetail from './pages/NewDetails';
+import NewsDetail from './pages/NewsDetail';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 	return (
 		<>
 			<HeaderTop />
 			<Header2 />
-			<Banner pageName={'Sign In'} singleName={'Sign In'} />
-			<SignIn />
+			<Outlet />
 			<Subscribe />
 			<Footer />
 		</>
