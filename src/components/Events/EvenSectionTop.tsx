@@ -1,5 +1,3 @@
-import React from 'react'
-
 const EventSectionTop= () => {
   return (
     <div className="section--sm section--top">
