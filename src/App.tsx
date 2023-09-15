@@ -18,6 +18,7 @@ import SignUp from './pages/SignUp';
 import MemberShipPlan from './components/MemberShip/MemberShipPlan';
 import NewsDetail from './pages/NewsDetail';
 import { Outlet } from 'react-router-dom';
+import About from './pages/About';
 
 function App() {
 	return (

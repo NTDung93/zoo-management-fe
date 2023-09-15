@@ -75,7 +75,7 @@ const Header2 = () => {
                             <ul className="primary-menu__sub">
                               <li className="primary-menu__sub-list">
                                 <a
-                                  href="about.html"
+                                  href="/about"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   About
