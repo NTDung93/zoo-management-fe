@@ -6,7 +6,6 @@ import Header2 from './components/Header/Header2';
 function App() {
 	return (
 		<>
-			{/* <HeaderTop /> */}
 			<Header2 />
 			<Outlet />
 			<Subscribe />
