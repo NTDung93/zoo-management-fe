@@ -5,7 +5,7 @@ function HeroSilder() {
       <div className="hero-slider">
         <div
           className="hero-slider__item"
-          style={{backgroundImage: 'url(/src/assets/images/slider-1.jpg)'}}
+          style={{ backgroundImage: "url(assets/images/slider-1.jpg)" }}
         >
           <div className="container">
             <div className="row">
@@ -30,10 +30,9 @@ function HeroSilder() {
           </div>
         </div>
         <div
-  className="hero-slider__item"
-  style={{ backgroundImage: 'url(/src/assets/images/slider-2.jpg)' }}
->
-
+          className="hero-slider__item"
+          style={{ backgroundImage: "url(assets/images/slider-2.jpg)" }}
+        >
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -58,9 +57,7 @@ function HeroSilder() {
         </div>
         <div
           className="hero-slider__item"
-          style={{ backgroundImage: 'url(/src/assets/images/slider-3.jpg))' }}
-
-         
+          style={{ backgroundImage: "url(assets/images/slider-3.jpg)" }}
         >
           <div className="container">
             <div className="row">
@@ -92,21 +89,21 @@ function HeroSilder() {
               <div className="hero-nav">
                 <div className="hero-nav__item">
                   <img
-                    src="/src/assets/images/slider-1.jpg"
+                    src="assets/images/slider-1.jpg"
                     alt="image"
                     className="hero-nav__img"
                   />
                 </div>
                 <div className="hero-nav__item">
                   <img
-                    src="/src/assets/images/slider-2.jpg"
+                    src="assets/images/slider-2.jpg"
                     alt="image"
                     className="hero-nav__img"
                   />
                 </div>
                 <div className="hero-nav__item">
                   <img
-                    src="/src/assets/images/slider-3.jpg"
+                    src="assets/images/slider-3.jpg"
                     alt="image"
                     className="hero-nav__img"
                   />
@@ -117,6 +114,8 @@ function HeroSilder() {
         </div>
       </div>
     </div>
+
+
   );
 }
 

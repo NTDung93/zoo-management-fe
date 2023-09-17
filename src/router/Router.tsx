@@ -16,6 +16,7 @@ import HomePage from "../pages/Homepage";
 import Page404 from "../pages/Page404";
 import AnimalDetail from "../pages/AnimalDetail";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +40,8 @@ export const router = createBrowserRouter([
             { path: 'sign-up', element: <SignUp /> },
             { path: 'ticket', element: <Ticket /> },
             { path: 'contact', element: <Contact /> },
+            { path: 'about', element: <About /> },
+
         ]
     }
 ]);
