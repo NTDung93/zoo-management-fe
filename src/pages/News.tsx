@@ -1,3 +1,4 @@
+import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import New from "../components/News/New";
 import Pagination from "../components/News/Pagination";
@@ -5,7 +6,8 @@ import Pagination from "../components/News/Pagination";
 export default function News() {
   return (
     <>
-      <Banner pageName={'News'} singleName={'News'} />
+      <BackToTop />
+      <Banner pageName={"News"} singleName={"News"} />
 
       <div className="section">
         <div className="section__head">

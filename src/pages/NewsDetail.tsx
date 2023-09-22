@@ -8,119 +8,20 @@ import Content from "../components/NewDetail/Content";
 import NewCate from "../components/NewDetail/NewCate";
 import Tags from "../components/NewDetail/Tags";
 import Banner from "../components/Banner/Banner";
-interface NewDetailProps { }
+import BackToTop from "../components/BackToTop/BackToTop";
+interface NewDetailProps {}
 
-const NewsDetail: FC<NewDetailProps> = ({ }) => {
+const NewsDetail: FC<NewDetailProps> = ({}) => {
   return (
     <>
-      <Banner pageName={'News detail'} singleName={'News detail'} />
+      <BackToTop />
+      <Banner pageName={"News detail"} singleName={"News detail"} />
 
       <div className="section">
         <div className="container">
           <div className="row g-4">
             <div className="col-md-7 col-lg-8">
               <Content imgmain={imgmain} imgsection={imgsection} />
-              <div className="list list--row flex-wrap justify-content-md-between align-items-center blog-share">
-                <ul className="list list--row flex-wrap align-items-center">
-                  <li>
-                    <span className="fw-md d-block"> Share </span>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="t-link btn btn--gallery text-uppercase sm-text fw-bold"
-                    >
-                      tiger
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="t-link btn btn--gallery text-uppercase sm-text fw-bold"
-                    >
-                      animal
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="t-link btn btn--gallery text-uppercase sm-text fw-bold"
-                    >
-                      blog
-                    </a>
-                  </li>
-                </ul>
-                <ul className="list list--row flex-wrap align-items-center">
-                  <li>
-                    <span className="fw-md d-block"> Share </span>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="t-link t-link--light icon icon--circle icon--xs bg--dark text--white"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="t-link t-link--light icon icon--circle icon--xs bg--dark text--white"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="t-link t-link--light icon icon--circle icon--xs bg--dark text--white"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="section--sm pb-0">
-                <h4 className="mt-0">Leave a Comment</h4>
-                <form action="#" className="row g-4">
-                  <div className="col-md-6">
-                    <input
-                      type="text"
-                      className="form-control form--control"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <input
-                      type="email"
-                      className="form-control form--control"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <input
-                      type="text"
-                      className="form-control form--control"
-                      placeholder="Website"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <textarea
-                      className="form-control form--control"
-                      placeholder="Write Comment"
-                    ></textarea>
-                  </div>
-                  <div className="col-12">
-                    <button
-                      type="button"
-                      className="btn btn--lg btn--base text-uppercase sm-text"
-                    >
-                      leave a comment
-                    </button>
-                  </div>
-                </form>
-              </div>
             </div>
             <div className="col-md-5 col-lg-4">
               <div className="ps-xl-4 ps-xxl-5">
@@ -190,7 +91,9 @@ const NewsDetail: FC<NewDetailProps> = ({ }) => {
                         </h5>
                         <h4 className="membership-card__price mt-2">$108.59</h4>
                         <ul className="list list--base">
-                          <li className="text--white">20% Dsicount All Event</li>
+                          <li className="text--white">
+                            20% Dsicount All Event
+                          </li>
                           <li className="text--white">Allow 2 adult person</li>
                         </ul>
                         <a href="#" className="btn btn--md btn--base mt-4">
@@ -206,8 +109,6 @@ const NewsDetail: FC<NewDetailProps> = ({ }) => {
         </div>
       </div>
     </>
-
-
   );
 };
 
