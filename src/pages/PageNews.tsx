@@ -1,9 +1,23 @@
+import { useEffect, useState } from "react";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
-import New from "../components/News/New";
+import NewsList from "../components/News/NewsList";
 import Pagination from "../components/News/Pagination";
+import { NewsObj } from "../models/news";
+import agent from "../api/agent";
 
-export default function News() {
+export default function PageNews() {
+  const [listNews, setListNews] = useState<NewsObj[]>([])
+
+  useEffect(() => {
+    agent.News.list()
+      .then(response => {
+        setListNews(response)
+        console.log(response);
+      })
+      .catch(error => console.log(error))
+  }, [])
+
   return (
     <>
       <BackToTop />
@@ -13,15 +27,7 @@ export default function News() {
         <div className="section__head">
           <div className="container">
             <div className="row g-4">
-              <New />
-              <New />
-              <New />
-              <New />
-              <New />
-              <New />
-              <New />
-              <New />
-              <New />
+              <NewsList listnews={listNews} />
             </div>
           </div>
         </div>

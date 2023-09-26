@@ -5,7 +5,6 @@ import Gallery from "../pages/Gallery";
 import SignUp from "../pages/SignUp";
 import Animals from "../pages/Animals";
 import NewsDetail from "../pages/NewsDetail";
-import News from "../pages/News";
 import SignIn from "../pages/SignIn";
 import Ticket from "../pages/Ticket";
 import HomePage from "../pages/Homepage";
@@ -13,6 +12,7 @@ import Page404 from "../pages/Page404";
 import AnimalDetail from "../pages/AnimalDetail";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import PageNews from "../pages/PageNews";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
       { path: "cart", element: <Cart /> },
       { path: "gallery", element: <Gallery /> },
       { path: "home", element: <HomePage /> },
-      { path: "news", element: <News /> },
+      { path: "news", element: <PageNews /> },
       { path: "news-detail", element: <NewsDetail /> },
       { path: "page-404", element: <Page404 /> },
       { path: "sign-in", element: <SignIn /> },
