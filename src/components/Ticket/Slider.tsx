@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
-interface SliderProps {}
+interface SliderProps { }
 
-const Slider: FC<SliderProps> = ({}) => {
+const Slider: FC<SliderProps> = ({ }) => {
   return (
     <div className="section--sm section--bottom">
       <div className="container">

@@ -1,8 +1,10 @@
+import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 
 const Contact = () => {
   return (
     <>
+      <BackToTop />
       <Banner pageName={"Contact Us"} singleName={"Contact Us"} />
       <div className="section--sm section--top">
         <div className="container">
