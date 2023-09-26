@@ -1,24 +1,20 @@
-import { FC } from 'react';
-import AnimalGallery from '../components/Animals/AnimalGallery';
-import ClientSectionSlider from '../components/Animals/ClientSectionSlider';
-import EventSection from '../components/Animals/EventSection';
-import MembershipSection from '../components/Animals/MembershipSection';
-import FactSection from '../components/Home/FactSection';
-import FAQSection from '../components/Home/FaqSection';
-import Banner from '../components/Banner/Banner';
+import { FC } from "react";
+import AnimalGallery from "../components/Animals/AnimalGallery";
+import ClientSectionSlider from "../components/Animals/ClientSectionSlider";
+import EventSection from "../components/Animals/EventSection";
+import Banner from "../components/Banner/Banner";
+import BackToTop from "../components/BackToTop/BackToTop";
 
 const Animals: FC = () => {
-	return (
-		<>
-			<Banner pageName={'Animals'} singleName={'Animals'} />
-			<AnimalGallery />
-			<EventSection />
-			<FAQSection />
-			<FactSection />
-			<MembershipSection />
-			<ClientSectionSlider />
-		</>
-	);
+  return (
+    <>
+      <BackToTop />
+      <Banner pageName={"Animals"} singleName={"Animals"} />
+      <AnimalGallery />
+      <EventSection />
+      <ClientSectionSlider />
+    </>
+  );
 };
 
 export default Animals;
