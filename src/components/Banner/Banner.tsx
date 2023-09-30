@@ -1,13 +1,11 @@
 interface Props {
   pageName: string;
   singleName: string;
+  pictureUrl: string;
 }
 
-const Banner = ({ pageName, singleName }: Props) => (
-  <div
-    className="banner"
-    style={{ backgroundImage: "url(src/assets/images/banner-img-2.png)" }}
-  >
+const Banner = ({ pageName, singleName, pictureUrl }: Props) => (
+  <div className="banner" style={{ backgroundImage: `url(${pictureUrl})` }}>
     <div className="banner__content">
       <div className="container">
         <div className="row g-3 justify-content-center">

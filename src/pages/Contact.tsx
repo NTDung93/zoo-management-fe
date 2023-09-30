@@ -1,9 +1,15 @@
+import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 
 const Contact = () => {
   return (
     <>
-      <Banner pageName={"Contact Us"} singleName={"Contact Us"} />
+      <BackToTop />
+      <Banner
+        pageName={"Contact Us"}
+        singleName={"Contact Us"}
+        pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091215/banner/zkca9wgow4qwhmzhrypc.jpg"
+      />
       <div className="section--sm section--top">
         <div className="container">
           <div className="row g-4 justify-content-between">

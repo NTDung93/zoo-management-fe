@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-assets
+src/assets
 *.local
 
 # Editor directories and files
@@ -23,3 +23,4 @@ assets
 *.njsproj
 *.sln
 *.sw?
+
