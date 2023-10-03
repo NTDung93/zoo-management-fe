@@ -6,7 +6,11 @@ export default function Cart() {
   return (
     <>
       <BackToTop />
-      <Banner pageName={"Cart"} singleName={"Cart"} />
+      <Banner
+        pageName={"Cart"}
+        singleName={"Cart"}
+        pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091228/banner/ejxl6rugbbou2yzhxyli.jpg"
+      />
 
       <div className="section--sm section--top">
         <div className="container">

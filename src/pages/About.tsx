@@ -9,7 +9,11 @@ import WelcomeSection from "../components/Home/WelcomeSection";
 export default function About() {
   return (
     <>
-      <Banner pageName={"About Zoo"} singleName={"About Zoo"} />
+      <Banner
+        pageName={"About Zoo"}
+        singleName={"About Zoo"}
+        pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091224/banner/ietmrxj8bkpg9gpgjpcc.jpg"
+      />
       <BackToTop />
       <div className="section--sm section--top">
         <div className="container">
@@ -17,7 +21,7 @@ export default function About() {
             <div className="col-lg-4 col-xl-5">
               <div className="me-xxl-5">
                 <img
-                  src="assets/images/info-img.png"
+                  src="https://res.cloudinary.com/dnk5fcjhn/image/upload/v1696068202/tien-dung/error/lkw0ctoz2jd1g5fyc5c0.png"
                   alt="image"
                   className="info-image"
                 />
@@ -129,7 +133,6 @@ export default function About() {
       </div>
       <WelcomeSection />
       <FactSection />
-      <AnimalGallery />
       <ExpertAuthoritySection />
       <BlogSection />
       <ImageSilderBottom />

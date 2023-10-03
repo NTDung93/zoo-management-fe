@@ -1,4 +1,3 @@
-
 function WelcomeSection() {
   return (
     <div className="section welcome-section">
@@ -104,7 +103,7 @@ function WelcomeSection() {
           <div className="col-md-8 col-xl-6">
             <div className="text-center">
               <img
-                src="/src/assets/images/lion-image.png"
+                src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696092265/order/fkg8vizybc6l0wzsgbds.jpg"
                 alt="images"
                 className="img-fluid mx-auto"
               />

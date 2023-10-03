@@ -61,8 +61,17 @@ const News = {
     // delete: (id: string) => requests.delete(`/news/${id}`),
 };
 
+const Animals = {
+    list: () => requests.get("Animals/animals"),
+    details: (id: number) => requests.get(`Animals/animal?id=${id}`),
+    search: (animalName: string) => requests.get(`search-animals?animalName=${animalName}`),
+    // create: (animal: {}) => requests.post("/news", news),
+    // update: (animal: {}) => requests.put("/news", news),
+    // delete: (id: string) => requests.delete(`/news/${id}`),
+};
+
 const agent = {
-    News,
+    News, Animals
 };
 
 export default agent;

@@ -15,7 +15,11 @@ const NewsDetail: FC<NewDetailProps> = ({}) => {
   return (
     <>
       <BackToTop />
-      <Banner pageName={"News detail"} singleName={"News detail"} />
+      <Banner
+        pageName={"News detail"}
+        singleName={"News detail"}
+        pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091229/banner/bakzqfhoqbzeoxrgyrkl.jpg"
+      />
 
       <div className="section">
         <div className="container">

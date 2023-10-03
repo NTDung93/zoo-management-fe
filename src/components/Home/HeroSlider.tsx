@@ -1,11 +1,13 @@
-
 function HeroSilder() {
   return (
     <div className="hero">
       <div className="hero-slider">
         <div
           className="hero-slider__item"
-          style={{ backgroundImage: "url(assets/images/slider-1.jpg)" }}
+          style={{
+            backgroundImage:
+              "url(https://res.cloudinary.com/dpysbryyk/image/upload/v1696091243/banner/nrxkgkwyavgug2g2c2tk.jpg)",
+          }}
         >
           <div className="container">
             <div className="row">
@@ -31,7 +33,10 @@ function HeroSilder() {
         </div>
         <div
           className="hero-slider__item"
-          style={{ backgroundImage: "url(assets/images/slider-2.jpg)" }}
+          style={{
+            backgroundImage:
+              "url(https://res.cloudinary.com/dpysbryyk/image/upload/v1696091229/banner/bakzqfhoqbzeoxrgyrkl.jpg)",
+          }}
         >
           <div className="container">
             <div className="row">
@@ -57,7 +62,10 @@ function HeroSilder() {
         </div>
         <div
           className="hero-slider__item"
-          style={{ backgroundImage: "url(assets/images/slider-3.jpg)" }}
+          style={{
+            backgroundImage:
+              "url(https://res.cloudinary.com/dpysbryyk/image/upload/v1696091228/banner/ejxl6rugbbou2yzhxyli.jpg)",
+          }}
         >
           <div className="container">
             <div className="row">
@@ -89,21 +97,21 @@ function HeroSilder() {
               <div className="hero-nav">
                 <div className="hero-nav__item">
                   <img
-                    src="assets/images/slider-1.jpg"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091243/banner/nrxkgkwyavgug2g2c2tk.jpg"
                     alt="image"
                     className="hero-nav__img"
                   />
                 </div>
                 <div className="hero-nav__item">
                   <img
-                    src="assets/images/slider-2.jpg"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091229/banner/bakzqfhoqbzeoxrgyrkl.jpg"
                     alt="image"
                     className="hero-nav__img"
                   />
                 </div>
                 <div className="hero-nav__item">
                   <img
-                    src="assets/images/slider-3.jpg"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091228/banner/ejxl6rugbbou2yzhxyli.jpg"
                     alt="image"
                     className="hero-nav__img"
                   />
@@ -114,8 +122,6 @@ function HeroSilder() {
         </div>
       </div>
     </div>
-
-
   );
 }
 

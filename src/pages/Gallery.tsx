@@ -6,7 +6,11 @@ export default function Gallery() {
   return (
     <>
       <BackToTop />
-      <Banner pageName={"Gallery"} singleName={"Gallery"} />
+      <Banner
+        pageName={"Gallery"}
+        singleName={"Gallery"}
+        pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091243/banner/nrxkgkwyavgug2g2c2tk.jpg"
+      />
       <div className="section--sm section--top">
         <div className="section__head">
           <div className="container">
