@@ -1,4 +1,3 @@
-
 function Gallery() {
   return (
     <div className="section--sm section--top">
@@ -38,7 +37,10 @@ function Gallery() {
                 </button>
               </li>
               <li>
-                <button className="btn btn--md btn--gallery" data-filter="tiger">
+                <button
+                  className="btn btn--md btn--gallery"
+                  data-filter="tiger"
+                >
                   TIGER
                 </button>
               </li>
@@ -53,7 +55,10 @@ function Gallery() {
                 </button>
               </li>
               <li>
-                <button className="btn btn--md btn--gallery" data-filter="koala">
+                <button
+                  className="btn btn--md btn--gallery"
+                  data-filter="koala"
+                >
                   KOALA
                 </button>
               </li>
@@ -73,13 +78,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-1.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320191/gellary/ds2yhmcar199hvrkjpgg.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-1.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320191/gellary/ds2yhmcar199hvrkjpgg.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -94,13 +99,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-2.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320177/gellary/zap18lfgn9zhbf2ge3zh.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-2.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320177/gellary/zap18lfgn9zhbf2ge3zh.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -115,13 +120,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-3.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320173/gellary/i6eqhcysearx0353xunu.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-3.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320173/gellary/i6eqhcysearx0353xunu.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -136,13 +141,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-4.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320172/gellary/vn97vpbfbgfcljoosnsd.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-4.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320172/gellary/vn97vpbfbgfcljoosnsd.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -157,13 +162,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-5.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320172/gellary/yskqxts4pbrfvcka0ukm.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-5.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320172/gellary/yskqxts4pbrfvcka0ukm.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -178,13 +183,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-6.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320171/gellary/hnwhfcjxvzloagvb2qsf.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-6.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320171/gellary/hnwhfcjxvzloagvb2qsf.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -199,13 +204,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-1.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320167/gellary/hbyf9qr0s61lfcldw9bt.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-1.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320167/gellary/hbyf9qr0s61lfcldw9bt.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -220,13 +225,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-2.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320166/gellary/m4gjtweis6cnggl4yh4u.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-2.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320166/gellary/m4gjtweis6cnggl4yh4u.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>
@@ -241,13 +246,13 @@ function Gallery() {
               >
                 <div className="gallery-card">
                   <img
-                    src="/src/assets/images/gallery-3.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320166/gellary/czdoozih8wgfgbm6u13j.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="/src/assets/images/gallery-3.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696320166/gellary/czdoozih8wgfgbm6u13j.jpg"
                       className="t-link gallery-card__link"
                     >
                       <i className="las la-plus"></i>

@@ -25,9 +25,9 @@ export default function HeaderTop() {
             </div>
             <div className="col-lg-4 bg-dark text-center">
               {/* Logo  */}
-              <a href="/home" className="logo mx-auto">
+              <a href="/" className="logo mx-auto">
                 <img
-                  src="src/assets/images/logo.png"
+                  src="https://res.cloudinary.com/dnk5fcjhn/image/upload/v1696089347/logo/xojcbh3wzgfcavmnspgu.svg"
                   alt="viserhyip"
                   className="img-fluid logo__is"
                 />

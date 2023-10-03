@@ -18,13 +18,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-1.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321086/gallerypage/ytbiqu1peiw9ldotkjra.png"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-1.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321086/gallerypage/ytbiqu1peiw9ldotkjra.png"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -35,13 +35,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-2.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321080/gallerypage/c3nnuh3btipeg7sj00mf.png"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-2.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321080/gallerypage/c3nnuh3btipeg7sj00mf.png"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -52,13 +52,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-3.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321078/gallerypage/huqwtzcjmsbqoccrmx4s.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-3.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321078/gallerypage/huqwtzcjmsbqoccrmx4s.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -69,13 +69,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-4.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321074/gallerypage/clbwzttwgin7cpe24fpq.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-4.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321074/gallerypage/clbwzttwgin7cpe24fpq.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -86,13 +86,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-5.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321070/gallerypage/wcdm6ohqjjhnpvwg77cl.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-5.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321070/gallerypage/wcdm6ohqjjhnpvwg77cl.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -103,13 +103,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-6.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321066/gallerypage/ktnjoqbbgkxkk50vafge.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-6.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321066/gallerypage/ktnjoqbbgkxkk50vafge.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -120,13 +120,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-1.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321065/gallerypage/evpitxpd57n66wtq20h6.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-1.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321065/gallerypage/evpitxpd57n66wtq20h6.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -137,13 +137,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-2.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321061/gallerypage/jw0uqr5f9k3nzjyz9pl8.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-2.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321061/gallerypage/jw0uqr5f9k3nzjyz9pl8.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -154,13 +154,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-3.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321060/gallerypage/cpagvdqf5frh9fleycng.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-3.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321060/gallerypage/cpagvdqf5frh9fleycng.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -171,13 +171,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-4.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321060/gallerypage/x9kmwfndvpdqmdpfawqe.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-4.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321060/gallerypage/x9kmwfndvpdqmdpfawqe.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -188,13 +188,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-5.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321059/gallerypage/vnh8bxid0aohdgmp7djw.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-5.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321059/gallerypage/vnh8bxid0aohdgmp7djw.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>
@@ -205,13 +205,13 @@ export default function Gallery() {
               <div className="col-md-6 col-lg-4">
                 <div className="gallery-card">
                   <img
-                    src="assets/images/gallery-6.png"
+                    src="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321059/gallerypage/qzbho4jnymx74pmfpiww.jpg"
                     alt="image"
                     className="gallery-card__img"
                   />
                   <div className="gallery-card__overlay">
                     <a
-                      href="assets/images/gallery-6.png"
+                      href="https://res.cloudinary.com/dpysbryyk/image/upload/v1696321059/gallerypage/qzbho4jnymx74pmfpiww.jpg"
                       className="t-link gallery-card__link show-img"
                     >
                       <i className="las la-plus"></i>

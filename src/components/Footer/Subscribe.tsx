@@ -12,7 +12,7 @@ export default function SignUp() {
                       {/* Logo  */}
                       <a href="/home" className="logo mx-auto ms-md-0">
                         <img
-                          src="src/assets/images/logo-alt.png"
+                          src="https://res.cloudinary.com/dnk5fcjhn/image/upload/v1696089347/logo/xojcbh3wzgfcavmnspgu.svg"
                           alt="viserhyip"
                           className="img-fluid logo__is"
                         />

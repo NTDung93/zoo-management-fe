@@ -40,9 +40,9 @@ const Header2 = () => {
             </div>
             <div className="col-lg-4 bg-dark text-center">
               {/* Logo */}
-              <a href="index.html" className="logo mx-auto">
+              <a href="/" className="logo mx-auto">
                 <img
-                  src="assets/images/logo.png"
+                  src="https://res.cloudinary.com/dnk5fcjhn/image/upload/v1696089347/logo/xojcbh3wzgfcavmnspgu.svg"
                   alt="viserhyip"
                   className="img-fluid logo__is"
                 />
@@ -88,9 +88,9 @@ const Header2 = () => {
                 <div className="row g-0 align-items-center">
                   <div className="col-6 d-lg-none">
                     {/* Logo  */}
-                    <a href="index.html" className="logo">
+                    <a href="/home" className="logo">
                       <img
-                        src="src/assets/images/logo.png"
+                        src="https://res.cloudinary.com/dnk5fcjhn/image/upload/v1696089347/logo/xojcbh3wzgfcavmnspgu.svg"
                         alt="viserhyip"
                         className="img-fluid logo__is"
                       />
