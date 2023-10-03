@@ -20,7 +20,7 @@ const ErrorSection = () => {
             </div>
             <div className="text-center">
               <a
-                href="index.html"
+                href="/home"
                 className="btn btn--xl btn--base text-uppercase sm-text"
               >
                 {" "}

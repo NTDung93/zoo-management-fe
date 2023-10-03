@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { AnimalObj } from "../../models/animal";
+import ImageSplitter from "../../utils/ImageSplitter";
 
 interface AnimalProps {
   animals: AnimalObj[];
@@ -35,11 +36,12 @@ const AnimalGallery: FC<AnimalProps> = ({ animals }) => {
           {animals.map((animalData) => (
             <div className="col-md-6 col-lg-4 col-xl-3" key={animalData.id}>
               <div className="animal-card">
-                <img
+                {/* <img
                   src={animalData.image}
                   alt="image"
                   className="animal-card__img"
-                />
+                /> */}
+                <ImageSplitter imageUrls={animalData.image.substring(1, animalData.image.length - 1).split(", ")} />
                 <div className="animal-card__body">
                   <h5 className="mt-0 mb-2 text-center">
                     <a
