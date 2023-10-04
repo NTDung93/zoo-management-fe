@@ -63,7 +63,7 @@ const News = {
 
 const Animals = {
     list: () => requests.get("Animals/animals"),
-    details: (id: number) => requests.get(`Animals/animal?id=${id}`),
+    details: (id: string) => requests.get(`Animals/animal?id=${id}`),
     search: (animalName: string) => requests.get(`search-animals?animalName=${animalName}`),
     // create: (animal: {}) => requests.post("/news", news),
     // update: (animal: {}) => requests.put("/news", news),
