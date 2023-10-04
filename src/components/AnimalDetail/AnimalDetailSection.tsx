@@ -1,4 +1,12 @@
-const AnimalDetailSection = () => {
+import { FC } from "react";
+import { AnimalObj } from "../../models/animal";
+
+interface AnimalProps {
+	animal: AnimalObj| undefined;
+}
+
+const AnimalDetailSection: FC<AnimalProps> = ({animal}) => {
+  console.log(animal?.image.split(",")[0].trim().substring(1));
   return (
     <>
       <div className="section--sm section--top">
@@ -8,21 +16,21 @@ const AnimalDetailSection = () => {
               <div className="animal-details-slider">
                 <div className="animal-details-slider__item">
                   <img
-                    src="assets/images/animal-details-img.png"
+                    src={animal?.image.split(",")[0].trim().substring(1)}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src="assets/images/footer-bg.png"
+                    src={animal?.image.split(",")[1].trim()}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src="assets/images/slider-1.jpg"
+                    src={animal?.image.split(",")[2].trim()}
                     alt="image"
                     className="animal-details-slider__img"
                   />
@@ -35,7 +43,7 @@ const AnimalDetailSection = () => {
       <div className="container">
         <div className="row g-4">
           <div className="col-md-7 col-lg-8">
-            <h4 className="mt-0">African Lion</h4>
+            <h4 className="mt-0">{animal?.name}</h4>
             <p>
               Suspendisse pulvinar augue ac venenatis condimentum sem libero
               volutpat nibh nec pellentesque velide quis nunc. Vestibulum ante
@@ -121,7 +129,7 @@ const AnimalDetailSection = () => {
                 <li>
                   <div className="member-card">
                     <img
-                      src="assets/images/member-card-1.png"
+                      src={animal?.image.split(",")[0].trim().substring(1)}
                       alt="image"
                       className="member-card__img"
                     />
