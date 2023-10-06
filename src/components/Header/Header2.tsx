@@ -152,14 +152,14 @@ const Header2 = () => {
                                   Animals
                                 </a>
                               </li>
-                              <li className="primary-menu__sub-list">
+                              {/* <li className="primary-menu__sub-list">
                                 <a
                                   href="/animal-detail"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   Animal Details
                                 </a>
-                              </li>
+                              </li> */}
                               <li className="primary-menu__sub-list">
                                 <a
                                   href="/cart"

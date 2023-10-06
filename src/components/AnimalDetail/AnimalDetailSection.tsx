@@ -2,11 +2,14 @@ import { FC } from "react";
 import { AnimalObj } from "../../models/animal";
 
 interface AnimalProps {
-	animal: AnimalObj| undefined;
+  animal: AnimalObj | undefined;
 }
 
-const AnimalDetailSection: FC<AnimalProps> = ({animal}) => {
-  console.log(animal?.image.split(",")[0].trim().substring(1));
+const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
+  // console.log(animal?.image.split(",")[0].trim().substring(1));
+  var listImage = animal?.image?.substring(1, animal?.image?.length - 1).split(", ") ?? [];
+
+  console.log(listImage);
   return (
     <>
       <div className="section--sm section--top">
@@ -27,21 +30,28 @@ const AnimalDetailSection: FC<AnimalProps> = ({animal}) => {
 
                 <div className="animal-details-slider__item">
                   <img
-                    src={animal?.image.split(",")[0].trim().substring(1)}
+                    src={listImage[0]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src={animal?.image.split(",")[1].trim()}
+                    src={listImage[1]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src={animal?.image.split(",")[2].trim().substring(0, animal?.image.split(",")[2].trim().length - 1)}
+                    src={listImage[2]}
+                    alt="image"
+                    className="animal-details-slider__img"
+                  />
+                </div>
+                <div className="animal-details-slider__item">
+                  <img
+                    src={listImage[3] ?? listImage[0]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
