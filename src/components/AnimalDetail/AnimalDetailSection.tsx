@@ -1,16 +1,12 @@
+import { FC } from "react";
 import { AnimalObj } from "../../models/animal";
 
-interface Props {
-  animal: AnimalObj | null;
+interface AnimalProps {
+	animal: AnimalObj| undefined;
 }
 
-const AnimalDetailSection = ({ animal }: Props) => {
-
-  var listImage = animal?.image?.substring(1, animal?.image?.length - 1).split(", ") ?? [];
-
-  console.log(listImage);
-
-
+const AnimalDetailSection: FC<AnimalProps> = ({animal}) => {
+  console.log(animal?.image.split(",")[0].trim().substring(1));
   return (
     <>
       <div className="section--sm section--top">
@@ -31,29 +27,21 @@ const AnimalDetailSection = ({ animal }: Props) => {
 
                 <div className="animal-details-slider__item">
                   <img
-                    src={listImage[0]}
+                    src={animal?.image.split(",")[0].trim().substring(1)}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src={listImage[1]}
+                    src={animal?.image.split(",")[1].trim()}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src={listImage[2]}
-                    alt="image"
-                    className="animal-details-slider__img"
-                  />
-                </div>
-
-                <div className="animal-details-slider__item">
-                  <img
-                    src={listImage[3] ?? listImage[0]}
+                    src={animal?.image.split(",")[2].trim().substring(0, animal?.image.split(",")[2].trim().length - 1)}
                     alt="image"
                     className="animal-details-slider__img"
                   />
@@ -66,7 +54,7 @@ const AnimalDetailSection = ({ animal }: Props) => {
       <div className="container">
         <div className="row g-4">
           <div className="col-md-7 col-lg-8">
-            <h4 className="mt-0">African Lion</h4>
+            <h4 className="mt-0">{animal?.name}</h4>
             <p>
               Suspendisse pulvinar augue ac venenatis condimentum sem libero
               volutpat nibh nec pellentesque velide quis nunc. Vestibulum ante
@@ -152,7 +140,7 @@ const AnimalDetailSection = ({ animal }: Props) => {
                 <li>
                   <div className="member-card">
                     <img
-                      src="assets/images/member-card-1.png"
+                      src={animal?.image.split(",")[0].trim().substring(1)}
                       alt="image"
                       className="member-card__img"
                     />

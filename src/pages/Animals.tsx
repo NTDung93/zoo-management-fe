@@ -12,7 +12,7 @@ const Animals: FC = () => {
     agent.Animals.list()
       .then((animals) => setAnimals(animals))
       .catch((error) => console.log(error));
-  });
+  },[]);
 
   return (
     <>

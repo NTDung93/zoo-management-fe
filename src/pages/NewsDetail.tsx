@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from "react";
-import imgsection from "./../assets/images/event-img-7.png";
 import imgcate from "./../assets/images/people-5.jpg";
 import imgmemberCard from "./../assets/images/member-card-1.png";
 
@@ -11,7 +10,6 @@ import BackToTop from "../components/BackToTop/BackToTop";
 import { NewsObj } from "../models/news";
 import { useLocation } from "react-router-dom";
 import agent from "../api/agent";
-import { SpeciesObj } from '../models/species';
 interface NewDetailProps { }
 
 const NewsDetail: FC<NewDetailProps> = ({ }) => {

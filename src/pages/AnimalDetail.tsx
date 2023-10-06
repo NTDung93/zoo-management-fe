@@ -1,38 +1,38 @@
 import { useEffect, useState } from "react";
+import agent from "../api/agent";
 import AnimalDetailSection from "../components/AnimalDetail/AnimalDetailSection";
 import OtherAnimalsSection from "../components/AnimalDetail/OtherAnimalsSection";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
 import { AnimalObj } from "../models/animal";
-import { useLocation } from "react-router-dom";
-import agent from "../api/agent";
+import { useParams } from "react-router-dom";
 
 const AnimalDetail = () => {
-  const [animal, setAnimal] = useState<AnimalObj | null>(null);
-
-  const { search } = useLocation();
-  const queryParams = new URLSearchParams(search);
-  const animalId = queryParams.get("id");
+  const { id }= useParams();
+  const [animal, setAnimal] = useState<AnimalObj>();
 
   useEffect(() => {
-    animalId && agent.Animals.details(Number(animalId))
-      .then(animal => setAnimal(animal))
-      .catch(err => console.log(err))
-  }, [animalId]);
-
+    agent.Animals.details(id ?? "")
+      .then((response) => {
+        setAnimal(response);
+        console.log(response);
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <>
       <BackToTop />
       <Banner
-        pageName={animal?.name ?? ''}
+        pageName={animal?.name ?? "Animal detail"}
         singleName={"Animal detail"}
         pictureUrl={animal?.image?.substring(1, animal?.image?.length - 1).split(", ")[0] ?? ''}
       />
-      <AnimalDetailSection animal={animal} />
-      <OtherAnimalsSection />
-      <ImageSilderBottom />
+      <AnimalDetailSection animal={animal}/>
+      <OtherAnimalsSection currentAnimalID={animal?.id ?? ""}/>
+      
+      <ImageSilderBottom /> 
     </>
   );
 };
