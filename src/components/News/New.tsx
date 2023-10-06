@@ -25,7 +25,7 @@ const New = ({ news }: Props) => {
           <div className="blog-post__content">
             <h4 className="blog-post__title">
               <a
-                href="blog-details.html"
+                href={`/news-detail?id=${news.id}`}
                 className="t-link blog-post__title-link"
               >
                 {news.title}

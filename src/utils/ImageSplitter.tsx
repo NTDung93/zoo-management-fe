@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 interface ImageSplitterProps {
     imageUrls: string[];
+    nameClass: string;
 }
 
-const ImageSplitter: React.FC<ImageSplitterProps> = ({ imageUrls }) => {
+const ImageSplitter: React.FC<ImageSplitterProps> = ({ imageUrls, nameClass }) => {
     const [randomIndex, setRandomIndex] = useState<number>(0);
 
     useEffect(() => {
@@ -16,9 +17,10 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ imageUrls }) => {
 
     return (
         <div>
-            <img src={randomImageUrl} className='animal-card__img' alt="Random Image" />
+            <img src={randomImageUrl} className={nameClass} alt="Random Image" />
         </div>
     );
 };
 
 export default ImageSplitter;
+

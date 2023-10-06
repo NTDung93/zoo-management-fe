@@ -1,4 +1,5 @@
 import { FC } from "react";
+import ImageSplitter from "../../utils/ImageSplitter";
 
 interface ContentProps {
   imgmain: string;
@@ -11,7 +12,8 @@ interface ContentProps {
 const Content: FC<ContentProps> = ({ imgmain, imgsection }) => {
   return (
     <>
-      <img src={imgmain} alt="image" className="img-fluid" />
+      {/* <img src={imgmain} alt="image" className="img-fluid" /> */}
+      <ImageSplitter imageUrls={imgmain.substring(1, imgmain.length - 1).split(", ")} nameClass={"img-fluid"} />
       <h4>The lion is a large cat of the genus Panthera native</h4>
       <ul className="list list--row flex-wrap classNameic-blog__meta">
         <li>

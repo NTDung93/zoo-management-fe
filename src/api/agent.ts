@@ -55,7 +55,7 @@ const requests = {
 
 const News = {
     list: () => requests.get("News/load-news"),
-    // details: (id: string) => requests.get(`/news/${id}`),
+    details: (id: number) => requests.get(`News/get-news?id=${id}`),
     // create: (news: {}) => requests.post("/news", news),
     // update: (news: {}) => requests.put("/news", news),
     // delete: (id: string) => requests.delete(`/news/${id}`),

@@ -1,5 +1,4 @@
-import { FC } from "react";
-import imgmain from "./../assets/images/blog-post-5.png";
+import { FC, useEffect, useState } from "react";
 import imgsection from "./../assets/images/event-img-7.png";
 import imgcate from "./../assets/images/people-5.jpg";
 import imgmemberCard from "./../assets/images/member-card-1.png";
@@ -9,23 +8,39 @@ import NewCate from "../components/NewDetail/NewCate";
 import Tags from "../components/NewDetail/Tags";
 import Banner from "../components/Banner/Banner";
 import BackToTop from "../components/BackToTop/BackToTop";
-interface NewDetailProps {}
+import { NewsObj } from "../models/news";
+import { useLocation } from "react-router-dom";
+import agent from "../api/agent";
+import { SpeciesObj } from '../models/species';
+interface NewDetailProps { }
 
-const NewsDetail: FC<NewDetailProps> = ({}) => {
+const NewsDetail: FC<NewDetailProps> = ({ }) => {
+  const [news, setNews] = useState<NewsObj | null>(null);
+
+  const { search } = useLocation();
+  const queryParams = new URLSearchParams(search);
+  const newsId = queryParams.get("id");
+
+  useEffect(() => {
+    newsId && agent.News.details(Number(newsId))
+      .then(news => setNews(news))
+      .catch(err => console.log(err))
+  }, [newsId]);
+
   return (
     <>
       <BackToTop />
       <Banner
-        pageName={"News detail"}
+        pageName={news?.title ?? ""}
         singleName={"News detail"}
-        pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091229/banner/bakzqfhoqbzeoxrgyrkl.jpg"
+        pictureUrl={news?.image ?? ""}
       />
 
       <div className="section">
         <div className="container">
           <div className="row g-4">
             <div className="col-md-7 col-lg-8">
-              <Content imgmain={imgmain} imgsection={imgsection} />
+              <Content imgmain={news?.animal.image ?? ""} imgsection={news?.emp.image ?? ""} />
             </div>
             <div className="col-md-5 col-lg-4">
               <div className="ps-xl-4 ps-xxl-5">
@@ -74,8 +89,8 @@ const NewsDetail: FC<NewDetailProps> = ({}) => {
                     <div className="widget">
                       <h5 className="widget__title">News Tag</h5>
                       <ul className="list list--row flex-wrap">
-                        <Tags nameTag="Tiger" />
-                        <Tags nameTag="African lion" />
+                        <Tags nameTag={news?.species.name ?? ''} />
+                        <Tags nameTag={news?.animal.name ?? ''} />
                         <Tags nameTag="Birds" />
                         <Tags nameTag="Live Came" />
                         <Tags nameTag="Water World" />

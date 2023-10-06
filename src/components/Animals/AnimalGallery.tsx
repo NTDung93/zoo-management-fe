@@ -36,16 +36,11 @@ const AnimalGallery: FC<AnimalProps> = ({ animals }) => {
           {animals.map((animalData) => (
             <div className="col-md-6 col-lg-4 col-xl-3" key={animalData.id}>
               <div className="animal-card">
-                {/* <img
-                  src={animalData.image}
-                  alt="image"
-                  className="animal-card__img"
-                /> */}
-                <ImageSplitter imageUrls={animalData.image.substring(1, animalData.image.length - 1).split(", ")} />
+                <ImageSplitter imageUrls={animalData.image.substring(1, animalData.image.length - 1).split(", ")} nameClass={"animal-card__img"} />
                 <div className="animal-card__body">
                   <h5 className="mt-0 mb-2 text-center">
                     <a
-                      href={`animal-details.html?animal=${animalData.image}`}
+                      href={`/animal-detail?id=${animalData.id}`}
                       className="t-link t-link--base heading-clr d-inline-block"
                     >
                       {animalData.name}

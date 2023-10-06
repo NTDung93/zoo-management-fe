@@ -1,4 +1,16 @@
-const AnimalDetailSection = () => {
+import { AnimalObj } from "../../models/animal";
+
+interface Props {
+  animal: AnimalObj | null;
+}
+
+const AnimalDetailSection = ({ animal }: Props) => {
+
+  var listImage = animal?.image?.substring(1, animal?.image?.length - 1).split(", ") ?? [];
+
+  console.log(listImage);
+
+
   return (
     <>
       <div className="section--sm section--top">
@@ -6,23 +18,42 @@ const AnimalDetailSection = () => {
           <div className="row">
             <div className="col-12">
               <div className="animal-details-slider">
+
+                {/* {(listImage.length > 0) && listImage.map((image, index) => (
+                  <div className="animal-details-slider__item" key={index}>
+                    <img
+                      src={image}
+                      alt="image"
+                      className="animal-details-slider__img"
+                    />
+                  </div>
+                ))} */}
+
                 <div className="animal-details-slider__item">
                   <img
-                    src="assets/images/animal-details-img.png"
+                    src={listImage[0]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src="assets/images/footer-bg.png"
+                    src={listImage[1]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src="assets/images/slider-1.jpg"
+                    src={listImage[2]}
+                    alt="image"
+                    className="animal-details-slider__img"
+                  />
+                </div>
+
+                <div className="animal-details-slider__item">
+                  <img
+                    src={listImage[3] ?? listImage[0]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
