@@ -30,7 +30,7 @@ const AnimalDetailSection: FC<AnimalProps> = ({animal}) => {
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src={animal?.image.split(",")[2].trim()}
+                    src={animal?.image.split(",")[2].trim().substring(0, animal?.image.split(",")[2].trim().length - 1)}
                     alt="image"
                     className="animal-details-slider__img"
                   />

@@ -25,7 +25,7 @@ const AnimalDetail = () => {
     <>
       <BackToTop />
       <Banner
-        pageName={"Animal detail"}
+        pageName={animal?.name ?? "Animal detail"}
         singleName={"Animal detail"}
         pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091215/banner/zkca9wgow4qwhmzhrypc.jpg"
       />
