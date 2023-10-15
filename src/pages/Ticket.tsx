@@ -10,7 +10,6 @@ import agent from "../api/agent";
 interface TicketProps {}
 
 const Ticket: FC<TicketProps> = ({}) => {
-
   const [tickets, setTickets] = useState<TicketObj[]>([]);
 
   useEffect(() => {
@@ -18,9 +17,6 @@ const Ticket: FC<TicketProps> = ({}) => {
       .then((tickets) => setTickets(tickets))
       .catch((error) => console.log(error));
   }, []); 
-
-  console.log(tickets);
-  
 
   return (
     <>
