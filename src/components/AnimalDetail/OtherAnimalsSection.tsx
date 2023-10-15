@@ -20,20 +20,23 @@ const OtherAnimalsSection: FC<AnimalProps> = ({ currentAnimalID }) => {
             <h4 className="m-0">Other Animals</h4>
           </div>
           {animals
-            ?.filter((animalData) => animalData.id.trim() !== currentAnimalID.trim()) // Lọc ra các con không có currentAnimalID
-			.slice(0, 4)
-			.map((animalData, index) => (
+            ?.filter(
+              (animalData) =>
+                animalData.animalId.trim() !== currentAnimalID.trim()
+            ) // Lọc ra các con không có currentAnimalID
+            .slice(0, 4)
+            .map((animalData, index) => (
               <div className="col-md-4 col-lg-3" key={index}>
                 <div className="animal-card">
                   <img
-                    src={animalData.image.split(",")[0].trim().substring(1)}
+                    src={animalData.image.split(",")[0]}
                     alt="image"
                     className="animal-card__img"
                   />
                   <div className="animal-card__body">
                     <h5 className="mt-0 mb-2 text-center">
                       <a
-                        href={`/animals/${animalData.id}`}
+                        href={`/animals/${animalData.animalId}`}
                         className="t-link t-link--base heading-clr d-inline-block"
                       >
                         {animalData.name}

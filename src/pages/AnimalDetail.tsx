@@ -9,7 +9,7 @@ import { AnimalObj } from "../models/animal";
 import { useParams } from "react-router-dom";
 
 const AnimalDetail = () => {
-  const { id }= useParams();
+  const { id } = useParams();
   const [animal, setAnimal] = useState<AnimalObj>();
 
   useEffect(() => {
@@ -27,12 +27,12 @@ const AnimalDetail = () => {
       <Banner
         pageName={animal?.name ?? "Animal detail"}
         singleName={"Animal detail"}
-        pictureUrl={animal?.image?.substring(1, animal?.image?.length - 1).split(", ")[0] ?? ''}
+        pictureUrl={animal?.image.split(", ")[0] ?? ""}
       />
-      <AnimalDetailSection animal={animal}/>
-      <OtherAnimalsSection currentAnimalID={animal?.id ?? ""}/>
-      
-      <ImageSilderBottom /> 
+      <AnimalDetailSection animal={animal} />
+      <OtherAnimalsSection currentAnimalID={animal?.animalId ?? ""} />
+
+      <ImageSilderBottom />
     </>
   );
 };

@@ -1,4 +1,3 @@
-
 function InfoSection() {
   return (
     <div className="info-section__container">
@@ -6,7 +5,9 @@ function InfoSection() {
         <div className="container">
           <div className="row g-4">
             <div className="col-md-6 col-lg-4">
-              <h4 className="info-section__title mt-0 text--white">Visitor Info</h4>
+              <h4 className="info-section__title mt-0 text--white">
+                Visitor Info
+              </h4>
               <ul className="list list--base">
                 <li>
                   <a href="#" className="t-link t-link--base text--white">
@@ -44,7 +45,7 @@ function InfoSection() {
                   <div className="list list--row justify-content-between">
                     <div
                       className="list list--row align-items-center"
-                      style={{gap: '0.5rem'}}
+                      style={{ gap: "0.5rem" }}
                     >
                       <span className="text--base">
                         <i className="far fa-clock"></i>
@@ -62,7 +63,7 @@ function InfoSection() {
                   <div className="list list--row justify-content-between">
                     <div
                       className="list list--row align-items-center"
-                      style={{gap: '0.5rem'}}
+                      style={{ gap: "0.5rem" }}
                     >
                       <span className="text--base">
                         <i className="far fa-clock"></i>
@@ -80,7 +81,7 @@ function InfoSection() {
                   <div className="list list--row justify-content-between">
                     <div
                       className="list list--row align-items-center"
-                      style={{gap: '0.5rem'}}
+                      style={{ gap: "0.5rem" }}
                     >
                       <span className="text--base">
                         <i className="far fa-clock"></i>
@@ -98,7 +99,7 @@ function InfoSection() {
                   <div className="list list--row justify-content-between">
                     <div
                       className="list list--row align-items-center"
-                      style={{gap: '0.5rem'}}
+                      style={{ gap: "0.5rem" }}
                     >
                       <span className="text--base">
                         <i className="far fa-clock"></i>
@@ -115,7 +116,9 @@ function InfoSection() {
               </ul>
             </div>
             <div className="col-md-6 col-lg-4">
-              <h4 className="info-section__title mt-0 text--white">Contact info</h4>
+              <h4 className="info-section__title mt-0 text--white">
+                Contact info
+              </h4>
               <ul className="list">
                 <li>
                   <div className="list list--row">
@@ -132,7 +135,7 @@ function InfoSection() {
                     <span className="info-section__icon">
                       <i className="far fa-envelope"></i>
                     </span>
-                    <ul className="list" style={{gap: '0.5rem'}}>
+                    <ul className="list" style={{ gap: "0.5rem" }}>
                       <li>
                         <p className="mb-0 text--white t-short-para">
                           viserzoosupport24/7.com
@@ -151,7 +154,7 @@ function InfoSection() {
                     <span className="info-section__icon">
                       <i className="fas fa-phone-alt"></i>
                     </span>
-                    <ul className="list" style={{gap: '0.5rem'}}>
+                    <ul className="list" style={{ gap: "0.5rem" }}>
                       <li>
                         <p className="mb-0 text--white t-short-para">
                           +123 - 456 - 789000
