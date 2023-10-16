@@ -1,4 +1,4 @@
 export interface AreaObj {
-    id: string;
-    name: string;
+    areaId: string
+  areaName: string
 }

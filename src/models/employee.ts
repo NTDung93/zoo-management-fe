@@ -1,10 +1,9 @@
 export interface EmpObj {
-    id: string;
+    employeeId: string;
     fullName: string;
     citizenId: string;
     email: string;
     phoneNumber: string;
     image: string;
-    role: string;
-    isDeleted: number;
+    employeeStatus: number;
 }

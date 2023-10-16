@@ -7,7 +7,7 @@ interface AnimalProps {
 
 const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
   // console.log(animal?.image.split(",")[0].trim().substring(1));
-  var listImage = animal?.image?.substring(1, animal?.image?.length - 1).split(", ") ?? [];
+  var listImage = animal?.image?.split(",") ?? [];
 
   console.log(listImage);
   return (
@@ -17,34 +17,27 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
           <div className="row">
             <div className="col-12">
               <div className="animal-details-slider">
-
-                {/* {(listImage.length > 0) && listImage.map((image, index) => (
-                  <div className="animal-details-slider__item" key={index}>
-                    <img
-                      src={image}
-                      alt="image"
-                      className="animal-details-slider__img"
-                    />
-                  </div>
-                ))} */}
+                {/* {listImage.length > 0 &&
+                  listImage.map((image, index) => (
+                    <div className="animal-details-slider__item" key={index}>
+                      <img
+                        src={image}
+                        alt="image"
+                        className="animal-details-slider__img"
+                      />
+                    </div>
+                  ))} */}
 
                 <div className="animal-details-slider__item">
                   <img
-                    src={listImage[0]}
+                    src={listImage[1] ?? listImage[0]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
                 </div>
                 <div className="animal-details-slider__item">
                   <img
-                    src={listImage[1]}
-                    alt="image"
-                    className="animal-details-slider__img"
-                  />
-                </div>
-                <div className="animal-details-slider__item">
-                  <img
-                    src={listImage[2]}
+                    src={listImage[2] ?? listImage[0]}
                     alt="image"
                     className="animal-details-slider__img"
                   />
@@ -150,7 +143,7 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
                 <li>
                   <div className="member-card">
                     <img
-                      src={animal?.image.split(",")[0].trim().substring(1)}
+                      src={animal?.image.split(",")[0]}
                       alt="image"
                       className="member-card__img"
                     />

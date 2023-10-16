@@ -10,9 +10,9 @@ import BackToTop from "../components/BackToTop/BackToTop";
 import { NewsObj } from "../models/news";
 import { useLocation } from "react-router-dom";
 import agent from "../api/agent";
-interface NewDetailProps { }
+interface NewDetailProps {}
 
-const NewsDetail: FC<NewDetailProps> = ({ }) => {
+const NewsDetail: FC<NewDetailProps> = ({}) => {
   const [news, setNews] = useState<NewsObj | null>(null);
 
   const { search } = useLocation();
@@ -20,9 +20,10 @@ const NewsDetail: FC<NewDetailProps> = ({ }) => {
   const newsId = queryParams.get("id");
 
   useEffect(() => {
-    newsId && agent.News.details(Number(newsId))
-      .then(news => setNews(news))
-      .catch(err => console.log(err))
+    newsId &&
+      agent.News.details(Number(newsId))
+        .then((news) => setNews(news))
+        .catch((err) => console.log(err));
   }, [newsId]);
 
   return (
@@ -38,7 +39,10 @@ const NewsDetail: FC<NewDetailProps> = ({ }) => {
         <div className="container">
           <div className="row g-4">
             <div className="col-md-7 col-lg-8">
-              <Content imgmain={news?.animal.image ?? ""} imgsection={news?.emp.image ?? ""} />
+              <Content
+                imgmain={news?.animal.image ?? ""}
+                imgsection={news?.employee.image ?? ""}
+              />
             </div>
             <div className="col-md-5 col-lg-4">
               <div className="ps-xl-4 ps-xxl-5">
@@ -87,8 +91,8 @@ const NewsDetail: FC<NewDetailProps> = ({ }) => {
                     <div className="widget">
                       <h5 className="widget__title">News Tag</h5>
                       <ul className="list list--row flex-wrap">
-                        <Tags nameTag={news?.species.name ?? ''} />
-                        <Tags nameTag={news?.animal.name ?? ''} />
+                        <Tags nameTag={news?.animalSpecies.speciesName ?? ""} />
+                        <Tags nameTag={news?.animal.name ?? ""} />
                         <Tags nameTag="Birds" />
                         <Tags nameTag="Live Came" />
                         <Tags nameTag="Water World" />
