@@ -2,15 +2,22 @@ import { Card, CardHeader, Avatar, CardMedia, CardContent, Typography, CardActio
 import { TicketObj } from "../../models/ticket";
 import { LoadingButton } from '@mui/lab';
 import { currencyFormat } from "../../utils/utils";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../Cart/cartSlice";
 
 interface Props {
     ticket: TicketObj
 }
 
 export default function ProductCard({ ticket: ticket }: Props) {
+    const dispatch = useDispatch();
+
+    const handleAddToCart = (ticket: TicketObj) => {
+        dispatch(addToCart({ticket: ticket, quantity: 1}));
+    }
 
     return (
-        <Card sx={{ maxWidth: 345, height:370 }}>
+        <Card sx={{ maxWidth: 345, height: 370 }}>
             <CardHeader
                 avatar={
                     <Avatar sx={{ bgcolor: '#86c305' }}>
@@ -19,7 +26,7 @@ export default function ProductCard({ ticket: ticket }: Props) {
                 }
                 title={ticket.type}
                 titleTypographyProps={{
-                    sx: { fontWeight: 'bold', color:'#86c305' }
+                    sx: { fontWeight: 'bold', color: '#86c305' }
                 }}
             ></CardHeader>
             <CardMedia
@@ -29,15 +36,18 @@ export default function ProductCard({ ticket: ticket }: Props) {
             />
             <CardContent sx={{ height: '100px' }}>
                 <Typography gutterBottom color='#86c305' variant="h5">
-                {currencyFormat(ticket.unitPrice)} Vnđ
+                    {currencyFormat(ticket.unitPrice)} Vnđ
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     {ticket.description}
                 </Typography>
             </CardContent>
             <CardActions>
-                <LoadingButton 
-                    size="small" sx={{color: "#86c305"}}>
+                <LoadingButton
+                    size="small" 
+                    sx={{ color: "#86c305" }}
+                    onClick={() => handleAddToCart(ticket)}
+                >
                     Add to cart
                 </LoadingButton>
             </CardActions>
