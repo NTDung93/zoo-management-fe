@@ -36,7 +36,7 @@ const AnimalGallery: FC<AnimalProps> = ({ animals }) => {
             <div className="col-md-6 col-lg-4 col-xl-3" key={index}>
               <div className="animal-card">
                 <img
-                  src={animalData.image.split(",")[0]}
+                  src={animalData.image.replace(/\[|\]|'/g, "").split(",")[0]}
                   alt="image"
                   className="animal-card__img"
                 />
