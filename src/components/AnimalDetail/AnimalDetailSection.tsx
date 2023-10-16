@@ -6,7 +6,8 @@ interface AnimalProps {
 }
 
 const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
-  var listImage = animal?.image?.split(",") ?? [];
+  // console.log(animal?.image.split(",")[0].trim().substring(1));
+  var listImage = animal?.image?.replace(/\[|\]|'/g, "").split(",") ?? [];
 
   console.log(listImage);
   return (
@@ -131,7 +132,7 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
                 <li>
                   <div className="member-card">
                     <img
-                      src={animal?.image.split(",")[0]}
+                      src={animal?.image.replace(/\[|\]|'/g, "").split(",")[0]}
                       alt="image"
                       className="member-card__img"
                     />
