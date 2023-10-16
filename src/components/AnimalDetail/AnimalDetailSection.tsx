@@ -6,7 +6,6 @@ interface AnimalProps {
 }
 
 const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
-  // console.log(animal?.image.split(",")[0].trim().substring(1));
   var listImage = animal?.image?.split(",") ?? [];
 
   console.log(listImage);
@@ -17,17 +16,6 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
           <div className="row">
             <div className="col-12">
               <div className="animal-details-slider">
-                {/* {listImage.length > 0 &&
-                  listImage.map((image, index) => (
-                    <div className="animal-details-slider__item" key={index}>
-                      <img
-                        src={image}
-                        alt="image"
-                        className="animal-details-slider__img"
-                      />
-                    </div>
-                  ))} */}
-
                 <div className="animal-details-slider__item">
                   <img
                     src={listImage[1] ?? listImage[0]}
