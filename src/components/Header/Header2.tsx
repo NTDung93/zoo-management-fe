@@ -186,14 +186,14 @@ const Header2 = () => {
                                   News
                                 </a>
                               </li>
-                              <li className="primary-menu__sub-list">
+                              {/* <li className="primary-menu__sub-list">
                                 <a
                                   href="/news-detail"
                                   className="t-link primary-menu__sub-link text-capitalize"
                                 >
                                   News detail
                                 </a>
-                              </li>
+                              </li> */}
                             </ul>
                           </li>
                           <li className="primary-menu__list">

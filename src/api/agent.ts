@@ -70,8 +70,12 @@ const Animals = {
     // delete: (id: string) => requests.delete(`/news/${id}`),
 };
 
+const Tickets = {
+    list: () => requests.get("Tickets/tickets"),
+};
+
 const agent = {
-    News, Animals
+    News, Animals, Tickets
 };
 
 export default agent;
