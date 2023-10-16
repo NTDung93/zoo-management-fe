@@ -4,10 +4,12 @@ import { toast } from 'react-toastify';
 
 interface CartState {
     cartItems: CartItemObj[];
+    totalQuantity: number;
 }
 
 const initialState: CartState = {
     cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')!) : [],
+    totalQuantity: 4,
 }
 
 export const cartSlice = createSlice({

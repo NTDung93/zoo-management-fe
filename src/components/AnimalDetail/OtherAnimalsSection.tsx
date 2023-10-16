@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { AnimalObj } from "../../models/animal";
 import agent from "../../api/agent";
+import ImageSplitter from "../../utils/ImageSplitter";
 
 interface AnimalProps {
   currentAnimalID: string;

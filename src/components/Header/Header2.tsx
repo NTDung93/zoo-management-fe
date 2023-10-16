@@ -1,6 +1,13 @@
+import { Badge } from "@mui/base";
+import { IconButton } from "@mui/material";
 import { useEffect } from "react";
+import { ShoppingCart } from '@mui/icons-material'
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/configureStore";
 const Header2 = () => {
-  // Sticky Menu Area
+  const {totalQuantity} = useSelector((state: RootState) => state.cart);
+
   useEffect(() => {
     const isSticky = () => {
       const header = document.querySelector(".header-section") as HTMLElement;
@@ -179,14 +186,6 @@ const Header2 = () => {
                                   News
                                 </a>
                               </li>
-                              {/* <li className="primary-menu__sub-list">
-                                <a
-                                  href="/news-detail"
-                                  className="t-link primary-menu__sub-link text-capitalize"
-                                >
-                                  News detail
-                                </a>
-                              </li> */}
                             </ul>
                           </li>
                           <li className="primary-menu__list">
@@ -259,7 +258,16 @@ const Header2 = () => {
                         {/* Primary Menu End */}
                         {/* User Login  */}
                         <div className="mx-3 ms-lg-auto me-lg-0">
-                          <ul className="list primary-menu primary-menu--alt">
+                          <ul className="list primary-menu primary-menu--alt" style={{ display: 'flex', alignItems: 'center' }}>
+                            <IconButton component={Link} to='/basket' size="large" edge='start' color='primary' sx={{ mr: 2 }}>
+                              <Badge color='secondary' style={{ color: '#86c305', display: 'flex', alignItems: 'center' }}>
+                                <ShoppingCart style={{transform: 'scale(1.2)'}}/>
+                                <div style={{ transform: 'scale(0.7) translateY(-13px)', fontWeight: '500' }}>
+                                  {totalQuantity}
+                                </div>
+                              </Badge>
+                            </IconButton>
+
                             <li className="primary-menu__list text-center">
                               <a
                                 href="sign-up.html"
