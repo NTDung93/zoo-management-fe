@@ -5,13 +5,29 @@ import { Box } from "@mui/system";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import ImageBottom from "../components/Bottom/ImageBottom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/configureStore";
 import BasketSummary from "../components/Cart/CartSummary";
+import { TicketObj } from "../models/ticket";
+import { addToCart, decreaseQuantity, removeFromCart } from "../components/Cart/cartSlice";
 
 export default function Cart() {
   const { cartItems } = useSelector((state: RootState) => state.cart);
+  const dispatch = useDispatch();
 
+  const handleRemoveItem = (ticket: TicketObj) => {
+    dispatch(removeFromCart({ ticket: ticket }));
+  }
+
+  const handleDecreaseQuantity = (ticket: TicketObj) => {
+    dispatch(decreaseQuantity({ ticket: ticket }));
+  }
+
+  const handleIncreaseQuantity = (ticket: TicketObj) => {
+    dispatch(addToCart({ ticket: ticket, quantity: 1 }));
+  }
+
+  
   return (
     <>
       <BackToTop />
@@ -24,7 +40,7 @@ export default function Cart() {
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', width: '70%' }}>
           {cartItems.length === 0 ? (
-            <Typography variant="h3" style={{color:'#86c305'}}>Your basket is now empty!</Typography>
+            <Typography variant="h3" style={{ color: '#86c305' }}>Your cart is now empty!</Typography>
           ) : (
             <TableContainer component={Paper} style={{ marginBottom: '2rem' }}>
               <Table sx={{ minWidth: 650 }}>
@@ -51,19 +67,19 @@ export default function Cart() {
                       </TableCell>
                       <TableCell align="right">{(item.ticket.unitPrice / 1000).toFixed(3)} Vnđ</TableCell>
                       <TableCell align="center">
-                        <LoadingButton
+                        <LoadingButton onClick={() => handleDecreaseQuantity(item.ticket)}
                           color="error">
                           <Remove />
                         </LoadingButton>
                         {item.quantity}
-                        <LoadingButton
+                        <LoadingButton onClick={() => handleIncreaseQuantity(item.ticket)}
                           color="secondary">
                           <Add />
                         </LoadingButton>
                       </TableCell>
                       <TableCell align="right">{((item.ticket.unitPrice * item.quantity) / 1000).toFixed(3)} Vnđ</TableCell>
                       <TableCell align="right">
-                        <LoadingButton>
+                        <LoadingButton onClick={() => handleRemoveItem(item.ticket)}>
                           <Delete style={{ color: '#86c305' }} />
                         </LoadingButton>
                       </TableCell>
