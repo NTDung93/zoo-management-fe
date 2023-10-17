@@ -1,10 +1,15 @@
 import { TableContainer, Paper, Table, TableBody, TableRow, TableCell } from "@mui/material";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store/configureStore";
 import { currencyFormat } from "../../utils/utils";
+import { clearCart } from "./cartSlice";
 
 export default function BasketSummary() {
     const { cartItems } = useSelector((state: RootState) => state.cart);
+    const dispatch = useDispatch();
+    const handleClearCart = () => {
+        dispatch(clearCart());
+      }
     var total = 0;
 
     cartItems.forEach(item => {
@@ -22,7 +27,16 @@ export default function BasketSummary() {
                         </TableRow>
                         <TableRow >
                             <TableCell colSpan={2}>
-                                <span style={{ fontStyle: 'italic' }}>*Please check again before checking out</span>
+                                <a href="/ticket" className="btn btn--sm btn--base" style={{marginRight: '1rem', backgroundColor: '#C2BFBE'}}>
+                                    {" "}
+                                    Continue shopping{" "}
+                                </a>
+                                <a href="#" className="btn btn--sm btn--base" style={{backgroundColor: '#E35020'}}
+                                    onClick={() => handleClearCart()}
+                                >
+                                    {" "}
+                                    Clear cart{" "}
+                                </a>
                             </TableCell>
                             <TableCell align="right">
                                 <a href="#" className="btn btn--sm btn--base">
