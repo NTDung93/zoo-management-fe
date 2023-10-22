@@ -1,6 +1,7 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { router } from "../router/Router";
 import { toast } from "react-toastify";
+import { CartItemObj } from "../models/cart";
 
 const sleep = () => new Promise((resolve) => setTimeout(resolve, 500));
 
@@ -58,9 +59,6 @@ const requests = {
 const News = {
     list: () => requests.get("News/load-news"),
     details: (id: number) => requests.get(`News/get-news?id=${id}`),
-    // create: (news: {}) => requests.post("/news", news),
-    // update: (news: {}) => requests.put("/news", news),
-    // delete: (id: string) => requests.delete(`/news/${id}`),
 };
 
 const Animals = {
@@ -80,9 +78,13 @@ const Tickets = {
     list: () => requests.get("Tickets/tickets"),
 };
 
+const Payments = {
+    create: (cartItems: CartItemObj[]) => requests.post("Payments/create-checkout-session", cartItems),
+};
 
 const agent = {
-    News, Animals, Tickets, Species
+    News, Animals, Tickets, Payments,Species
+ 
 };
 
 export default agent;
