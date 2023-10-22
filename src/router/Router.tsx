@@ -13,6 +13,7 @@ import AnimalDetail from "../pages/AnimalDetail";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import PageNews from "../pages/PageNews";
+import CheckoutSuccess from "../pages/CheckoutSuccess";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "animals", element: <Animals /> },
       { path: "animals/:id", element: <AnimalDetail /> },
       { path: "cart", element: <Cart /> },
+      { path: "checkout-success", element: <CheckoutSuccess /> },
       { path: "gallery", element: <Gallery /> },
       { path: "home", element: <HomePage /> },
       { path: "news", element: <PageNews /> },
