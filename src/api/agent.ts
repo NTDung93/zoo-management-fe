@@ -49,7 +49,9 @@ axios.interceptors.response.use(
 
 const requests = {
     get: (url: string) => axios.get(url).then(responseBody),
+    // eslint-disable-next-line @typescript-eslint/ban-types
     post: (url: string, body: {}) => axios.post(url, body).then(responseBody),
+    // eslint-disable-next-line @typescript-eslint/ban-types
     put: (url: string, body: {}) => axios.put(url, body).then(responseBody),
     delete: (url: string) => axios.delete(url).then(responseBody),
 };

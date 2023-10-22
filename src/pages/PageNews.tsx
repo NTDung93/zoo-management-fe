@@ -33,6 +33,7 @@ export default function PageNews() {
             <div className="row g-4">
               <NewsList listnews={listNews} />
             </div>
+            
           </div>
         </div>
         <Pagination />
