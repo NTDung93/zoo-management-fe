@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store/configureStore";
 import { currencyFormat } from "../../utils/utils";
 import { clearCart } from "./cartSlice";
-import agent from "../../api/agent";
 
 export default function BasketSummary() {
     const { cartItems } = useSelector((state: RootState) => state.cart);
@@ -11,22 +10,8 @@ export default function BasketSummary() {
     const handleClearCart = () => {
         dispatch(clearCart());
     }
-
-    const handleCheckout = () => {
-        agent.Payments.create(cartItems)
-            .then((res) => {
-                if (res) {
-                    window.location.href = res;
-                }
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err.message);
-            });
-    }
-
+     
     var total = 0;
-
     cartItems.forEach(item => {
         total += item.ticket.unitPrice * item.quantity;
     });
@@ -38,7 +23,7 @@ export default function BasketSummary() {
                     <TableBody>
                         <TableRow>
                             <TableCell colSpan={2}>Total</TableCell>
-                            <TableCell align="right">{currencyFormat(total)} Vnđ</TableCell>
+                            <TableCell align="right">{currencyFormat(total)} vnd</TableCell>
                         </TableRow>
                         <TableRow >
                             <TableCell colSpan={2}>
@@ -54,7 +39,7 @@ export default function BasketSummary() {
                                 </a>
                             </TableCell>
                             <TableCell align="right">
-                                <a href="#" className="btn btn--sm btn--base" onClick={() => handleCheckout()}>
+                                <a href="/checkout" className="btn btn--sm btn--base" >
                                     {" "}
                                     Checkout{" "}
                                 </a>

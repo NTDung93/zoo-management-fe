@@ -7,5 +7,5 @@ export interface CartObj {
 export interface CartItemObj {
     ticket: TicketObj;
     quantity: number;
-    entryDate?: Date;
+    entryDate: Date;
 }

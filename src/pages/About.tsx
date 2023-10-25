@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
+=======
+import { useEffect, useState } from "react";
+>>>>>>> 802d113 (done checkout feature front end)
 import agent from "../api/agent";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";

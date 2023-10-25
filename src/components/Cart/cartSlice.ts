@@ -24,6 +24,19 @@ export const cartSlice = createSlice({
                 toast.success(`Added ${action.payload.quantity} ${action.payload.ticket.type} ticket to cart`, { position: "bottom-left", autoClose: 2000 });
             }
 
+            //set day of all cart items to the current date
+            state.cartItems.forEach(item => {
+                item.entryDate = new Date();
+            });
+
+            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+        },
+        updateEntryDate(state, action) {
+            const existingItem = state.cartItems.find(item => item.ticket.ticketId === action.payload.ticket.ticketId);
+            if (existingItem) {
+                existingItem.entryDate = action.payload.entryDate;
+                toast.info(`Updated entry date for ${action.payload.ticket.type} ticket`, { position: "bottom-left", autoClose: 2000 });
+            }
             localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
         },
         removeFromCart(state, action) {
@@ -56,4 +69,4 @@ export const cartSlice = createSlice({
     },
 });
 
-export const { addToCart, removeFromCart, decreaseQuantity, clearCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, decreaseQuantity, clearCart, updateEntryDate } = cartSlice.actions;
