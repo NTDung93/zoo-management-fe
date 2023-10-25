@@ -1,6 +1,8 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { router } from "../router/Router";
 import { toast } from "react-toastify";
+import { CartItemObj } from "../models/cart";
+import { OrderObj } from "../models/order";
 
 const sleep = () => new Promise((resolve) => setTimeout(resolve, 500));
 
@@ -48,7 +50,9 @@ axios.interceptors.response.use(
 
 const requests = {
     get: (url: string) => axios.get(url).then(responseBody),
+    // eslint-disable-next-line @typescript-eslint/ban-types
     post: (url: string, body: {}) => axios.post(url, body).then(responseBody),
+    // eslint-disable-next-line @typescript-eslint/ban-types
     put: (url: string, body: {}) => axios.put(url, body).then(responseBody),
     delete: (url: string) => axios.delete(url).then(responseBody),
 };
@@ -56,26 +60,25 @@ const requests = {
 const News = {
     list: () => requests.get("News/load-news"),
     details: (id: number) => requests.get(`News/get-news?id=${id}`),
-    // create: (news: {}) => requests.post("/news", news),
-    // update: (news: {}) => requests.put("/news", news),
-    // delete: (id: string) => requests.delete(`/news/${id}`),
 };
 
 const Animals = {
     list: () => requests.get("Animals/animals"),
     details: (id: string) => requests.get(`Animals/animal?id=${id}`),
     search: (animalName: string) => requests.get(`search-animals?animalName=${animalName}`),
-    // create: (animal: {}) => requests.post("/news", news),
-    // update: (animal: {}) => requests.put("/news", news),
-    // delete: (id: string) => requests.delete(`/news/${id}`),
 };
 
 const Tickets = {
     list: () => requests.get("Tickets/tickets"),
 };
 
+const Payments = {
+    create: (cartItems: CartItemObj[]) => requests.post("Payments/create-checkout-session", cartItems),
+    createOrder: (order: OrderObj) => requests.post("Payments/create-order", order),
+};
+
 const agent = {
-    News, Animals, Tickets
+    News, Animals, Tickets, Payments
 };
 
 export default agent;
