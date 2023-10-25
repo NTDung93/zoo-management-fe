@@ -2,6 +2,7 @@ import axios, { AxiosError, AxiosResponse } from "axios";
 import { router } from "../router/Router";
 import { toast } from "react-toastify";
 import { CartItemObj } from "../models/cart";
+import { OrderObj } from "../models/order";
 
 const sleep = () => new Promise((resolve) => setTimeout(resolve, 500));
 
@@ -73,6 +74,7 @@ const Tickets = {
 
 const Payments = {
     create: (cartItems: CartItemObj[]) => requests.post("Payments/create-checkout-session", cartItems),
+    createOrder: (order: OrderObj) => requests.post("Payments/create-order", order),
 };
 
 const agent = {
