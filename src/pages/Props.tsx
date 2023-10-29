@@ -1,3 +1,3 @@
 interface Props {
-    animal: AnimalObj;
+  // animal: AnimalObj;
 }

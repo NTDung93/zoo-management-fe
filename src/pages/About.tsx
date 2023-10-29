@@ -1,4 +1,3 @@
-import AnimalGallery from "../components/Animals/AnimalGallery";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
