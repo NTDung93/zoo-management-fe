@@ -21,8 +21,8 @@ function BlogSection({ listnews }: Props) {
                   Latest <span>News & Tips</span>
                 </h2>
                 <p className="section__para mx-auto">
-                  Phasellus consectetuer vestibulum elit. Ametusbibendum mattis
-                  non. Vestibulum fringilla pede sit ameugue.
+                  Stay informed with our latest news and expert tips. Explore our
+                  articles and stay connected with the world of nature.
                 </p>
               </div>
             </div>

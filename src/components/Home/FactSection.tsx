@@ -11,7 +11,7 @@ const FactSection = () => {
                   <h1 className="m-0">
                     <span
                       className="counter-card__title odometer"
-                      data-odometer-final="156"
+                      data-odometer-final="100"
                     >
                       0
                     </span>

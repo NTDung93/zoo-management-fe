@@ -1,6 +1,6 @@
 function InfoSection() {
   return (
-    <div className="info-section__container">
+    <div className="info-section__container mt-5">
       <div className="section info-section">
         <div className="container">
           <div className="row g-4">
@@ -126,7 +126,7 @@ function InfoSection() {
                       <i className="fas fa-map-marker-alt"></i>
                     </span>
                     <p className="mb-0 text--white t-short-para">
-                      New York 10460 , Old city town martina road
+                      Ho Chi Minh city, a bustling Vietnamese hub of history and modernity
                     </p>
                   </div>
                 </li>

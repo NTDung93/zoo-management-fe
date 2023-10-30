@@ -19,8 +19,9 @@ export default function SignUp() {
                       </a>
                       {/* Logo End */}
                       <p className="t-short-para mb-0 text--white mx-auto ms-md-0">
-                        Phasellus consectetuer vestibenean tellus metusbibenu
-                        muere mattis non nunc.
+                        Subscribe to our newsletter and stay informed about the
+                        latest updates, news, and exclusive tips on wildlife and
+                        conservation.
                       </p>
                     </div>
                   </div>

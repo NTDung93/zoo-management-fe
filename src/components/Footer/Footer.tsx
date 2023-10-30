@@ -8,29 +8,29 @@ const Footer = () => {
 							<h4 className='info-section__title mt-0 text--white'>Contact info</h4>
 							<ul className='list'>
 								<li>
-									<div className='list list--row'>
+									<div className='list list--row align-items-center'>
 										<span className='info-section__icon'>
 											<i className='fas fa-map-marker-alt'></i>
 										</span>
 										<p className='mb-0 text--white t-short-para'>
-											New York 10460, Old city town martina road
+										Vung Tau City, Vietnam
 										</p>
 									</div>
 								</li>
 								<li>
-									<div className='list list--row'>
+									<div className='list list--row align-items-center'>
 										<span className='info-section__icon'>
 											<i className='far fa-envelope'></i>
 										</span>
 										<ul className='list' >
 											<li>
-												<p className='mb-0 text--white t-short-para'>support24/7.com</p>
+												<p className='mb-0 text--white t-short-para'>amazoo@gmail.com</p>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<li>
-									<div className='list list--row'>
+									<div className='list list--row align-items-center'>
 										<span className='info-section__icon'>
 											<i className='fas fa-phone-alt'></i>
 										</span>

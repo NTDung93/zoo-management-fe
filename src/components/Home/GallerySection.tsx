@@ -16,8 +16,9 @@ function Gallery() {
                   Let`s see our Viserzoo awsome <span>Gallery</span>
                 </h2>
                 <p className="section__para mx-auto">
-                  Phasellus consectetuer vestibulum elit. Ametusbibendum mattis
-                  non. Vestibulum fringilla pede sit ameugue.
+                  Explore our stunning collection of wildlife photographs and
+                  exhibits. Visit us to
+                  experience these wonders up close.
                 </p>
               </div>
             </div>
