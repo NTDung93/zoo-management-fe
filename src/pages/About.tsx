@@ -49,12 +49,12 @@ export default function About() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    frequently asked questions
+                    Frequently asked questions
                   </a>
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    Zoo Derection Map
+                    Zoo Direction Map
                   </a>
                 </li>
                 <li>
@@ -64,7 +64,7 @@ export default function About() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    Zoo Rules &amp; Gudie Line
+                    Zoo Rules &amp; Guide Line
                   </a>
                 </li>
               </ul>

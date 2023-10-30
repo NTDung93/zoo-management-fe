@@ -3,7 +3,6 @@ import { router } from "../router/Router";
 import { toast } from "react-toastify";
 import { CartItemObj } from "../models/cart";
 import { OrderObj } from "../models/order";
-
 const sleep = () => new Promise((resolve) => setTimeout(resolve, 500));
 
 axios.defaults.baseURL = "http://localhost:5000/api/";
@@ -68,17 +67,22 @@ const Animals = {
     search: (animalName: string) => requests.get(`search-animals?animalName=${animalName}`),
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Species = {
+    list: () => requests.get("AnimalSpecies/species"),
+};
+
+
 const Tickets = {
     list: () => requests.get("Tickets/tickets"),
 };
-
 const Payments = {
     create: (cartItems: CartItemObj[]) => requests.post("Payments/create-checkout-session", cartItems),
     createOrder: (order: OrderObj) => requests.post("Payments/create-order", order),
 };
 
 const agent = {
-    News, Animals, Tickets, Payments
+    News, Animals, Tickets, Payments,Species
 };
 
 export default agent;

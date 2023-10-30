@@ -16,14 +16,17 @@ function HeroSilder() {
                   <div className="hero-slider__content justify-content-center">
                     <div className="row justify-content-center justify-content-lg-start">
                       <div className="col-md-9 col-lg-6 text-center text-lg-start">
+                        <h3 className="hero-slider__title text-capitalize text--white mb-4">
+                        Experience a world of wildlife in the heart
+                        </h3>
                         <h1 className="hero-slider__title text-capitalize text--white mb-4">
-                          Gift a year of wonderful family days out
+                          Visit AmaZoo
                         </h1>
                         <a
-                          href="gallery.html"
+                          href="/ticket"
                           className="btn btn--xl btn--base sm-text"
                         >
-                          DISCOVER MORE
+                          BUY TICKET
                         </a>
                       </div>
                     </div>

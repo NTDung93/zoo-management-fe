@@ -6,15 +6,16 @@ function WelcomeSection() {
           <div className="col-md-8 col-xl-6">
             <div className="text-center text-xl-start">
               <span className="section__particles">
-                <span className="section__subtitle"> Welcome to Viserzoo </span>
+                <span className="section__subtitle"> Welcome to AmaZoo </span>
               </span>
               <h2 className="section__title mt-2">
-                Why You Should Visit <span>Viserzoo</span>
+                Why You Should Visit <span>AmaZoo</span>
               </h2>
               <p className="section__para mx-auto ms-xl-0 mb-xxl-5">
-                Phasellus consectetuer vestibulum elit. Aenean tellus
-                metusbibendum suere mattis non nunc. Vestibulum fringilla pede
-                sit ameugue. In turpis. Pellentesque posuere.
+                Welcome to our beloved zoo, a place where the enchanting world
+                of wildlife comes to life. Immerse yourself in the wonders of
+                nature as you explore our beautifully curated exhibits, designed
+                to provide a home for a diverse array of animal species.
               </p>
             </div>
             <div className="row g-4">
@@ -32,8 +33,9 @@ function WelcomeSection() {
                       Free car Parking
                     </h5>
                     <p className="mb-0 text-center text-xl-start">
-                      Praesent adipiscing. Phasellu lamcorper ipsum rutrumunc.
-                      Nunc nonummy workings
+                      Enjoy the convenience of free car parking during your
+                      visit. We want to make your trip to our zoo as stress-free
+                      as possible.
                     </p>
                   </div>
                 </div>
@@ -49,11 +51,11 @@ function WelcomeSection() {
                   </div>
                   <div className="welcome-card__content">
                     <h5 className="mt-xl-0 mb-2 text-center text-xl-start">
-                      Supper Eviorment
+                      Superb Environment
                     </h5>
                     <p className="mb-0 text-center text-xl-start">
-                      Praesent adipiscing. Phasellu lamcorper ipsum rutrumunc.
-                      Nunc nonummy workings
+                      We've created natural habitats for our animals and a
+                      superb environment for you to enjoy.
                     </p>
                   </div>
                 </div>
@@ -69,11 +71,11 @@ function WelcomeSection() {
                   </div>
                   <div className="welcome-card__content">
                     <h5 className="mt-xl-0 mb-2 text-center text-xl-start">
-                      World best Animls
+                      World best Animals
                     </h5>
                     <p className="mb-0 text-center text-xl-start">
-                      Praesent adipiscing. Phasellu lamcorper ipsum rutrumunc.
-                      Nunc nonummy workings
+                      Encounter incredible creatures from around the world. Get
+                      ready to be amazed!
                     </p>
                   </div>
                 </div>
@@ -92,8 +94,8 @@ function WelcomeSection() {
                       Guide & Security
                     </h5>
                     <p className="mb-0 text-center text-xl-start">
-                      Praesent adipiscing. Phasellu lamcorper ipsum rutrumunc.
-                      Nunc nonummy workings
+                      Our knowledgeable guides and top-notch security team are
+                      here to enhance your experience and ensure your safety.
                     </p>
                   </div>
                 </div>
