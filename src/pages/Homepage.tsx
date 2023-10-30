@@ -26,9 +26,9 @@ function HomePage() {
     <>
       <BackToTop />
       <HeroSilder />
-      <AnimalSlider />
-      <WelcomeSection />
+      <AnimalSlider/>
       <InfoSection />
+      <WelcomeSection />
       <Gallery />
       <FactSection />
       <BlogSection listnews={listNews}/>
