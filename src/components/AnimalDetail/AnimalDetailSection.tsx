@@ -7,9 +7,7 @@ interface AnimalProps {
 
 const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
   // console.log(animal?.image.split(",")[0].trim().substring(1));
-  var listImage = animal?.image?.split(",") ?? [];
-
-  console.log(listImage);
+  const listImage = animal?.image.split(",").map(item => item.replace(/\[|\]/g, "").trim())  ?? [];
   return (
     <>
       <div className="section--sm section--top">
@@ -17,17 +15,13 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
           <div className="row">
             <div className="col-12">
               <div className="animal-details-slider">
-                {/* {listImage.length > 0 &&
-                  listImage.map((image, index) => (
-                    <div className="animal-details-slider__item" key={index}>
-                      <img
-                        src={image}
-                        alt="image"
-                        className="animal-details-slider__img"
-                      />
-                    </div>
-                  ))} */}
-
+                <div className="animal-details-slider__item">
+                  <img
+                    src={listImage[0]}
+                    alt="image"
+                    className="animal-details-slider__img"
+                  />
+                </div>
                 <div className="animal-details-slider__item">
                   <img
                     src={listImage[1] ?? listImage[0]}
@@ -68,26 +62,19 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
               fames ac turpis egestas.
             </p>
             <h4>Fascinating Facts</h4>
-            <p>
-              Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in
-              nunc fringilla tristique. Morbi mattis ullamcorper velit.
-              Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero
-              tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed
-              hendrerit. Morbi ac felis.
-            </p>
+        
             <div className="row g-4">
-              <div className="col-md-6">
+              <div >
                 <ul className="list list--base">
-                  <li>lives in a group, or pride</li>
-                  <li>Female lions do most of the hunting</li>
+                  <li>    Flamingos get their beautiful pink colour from the small animals
+                that they eat. </li>
+                  <li>In the Zoo we feed a specially prepared diet that
+                keeps them pink.</li>
+                <li>Flamingos often stand on one leg. One reason is
+                that it keeps the folded leg warm.</li>
                 </ul>
               </div>
-              <div className="col-md-6">
-                <ul className="list list--base">
-                  <li>lives in a group, or pride</li>
-                  <li>Female lions do most of the hunting</li>
-                </ul>
-              </div>
+            
             </div>
             <h4>Physical Characteristics</h4>
             <p>
@@ -112,30 +99,9 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
             </p>
             <h4>Social Behavior</h4>
             <p>
-              blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra
-              convallis urna. Quisque ut nisi. Donec mi odio, faucibus at,
-              scelerisque quis, convallis in, nisi. Suspendisse non nisl sit
-              amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus
-              hendrerit. Proin pretium, leo ac pellentesque Maecenas egestas
-              arcu quis ligula mattis placerat. Duis lobortis massa imperdiet
-              quam. Suspendisse potenti. Pellentesque commodo eros a enim.
-              Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum
-              eu, nisl. Sed libero.
+              {animal?.behavior}
             </p>
-            <div className="row g-4">
-              <div className="col-md-6">
-                <ul className="list list--base">
-                  <li>lives in a group, or pride</li>
-                  <li>Female lions do most of the hunting</li>
-                </ul>
-              </div>
-              <div className="col-md-6">
-                <ul className="list list--base">
-                  <li>lives in a group, or pride</li>
-                  <li>Female lions do most of the hunting</li>
-                </ul>
-              </div>
-            </div>
+           
           </div>
           <div className="col-md-5 col-lg-4">
             <div className="ps-xxl-5">
@@ -143,11 +109,11 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
                 <li>
                   <div className="member-card">
                     <img
-                      src={animal?.image.split(",")[0]}
+                      src={listImage[1] ?? listImage[0]}
                       alt="image"
                       className="member-card__img"
                     />
-                    <div className="member-card__content align-items-start">
+                    {/* <div className="member-card__content align-items-start">
                       <h5 className="membership-card__title mb-2 text--white">
                         Premium
                       </h5>
@@ -159,7 +125,7 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
                       <a href="#" className="btn btn--md btn--base mt-4">
                         Buy Ticket
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </li>
               </ul>

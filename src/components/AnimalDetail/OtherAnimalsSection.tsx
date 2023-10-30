@@ -29,7 +29,7 @@ const OtherAnimalsSection: FC<AnimalProps> = ({ currentAnimalID }) => {
               <div className="col-md-4 col-lg-3" key={index}>
                 <div className="animal-card">
                   <img
-                    src={animalData.image.split(",")[0]}
+                    src={animalData.image.split(",")[0].replace("[", " ")}
                     alt="image"
                     className="animal-card__img"
                   />

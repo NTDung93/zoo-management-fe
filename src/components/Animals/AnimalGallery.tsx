@@ -7,6 +7,8 @@ interface AnimalProps {
 }
 
 const AnimalGallery: FC<AnimalProps> = ({ animals }) => {
+
+  
   return (
     <div className="section--sm section--top">
       <div className="section__head">
@@ -37,7 +39,7 @@ const AnimalGallery: FC<AnimalProps> = ({ animals }) => {
             <div className="col-md-6 col-lg-4 col-xl-3" key={index}>
               <div className="animal-card">
                 <img
-                  src={animalData.image.split(",")[0]}
+                  src={animalData?.image?.split(",")[0].replace("[", "").replace("]", "") }
                   alt="image"
                   className="animal-card__img"
                 />
@@ -47,7 +49,7 @@ const AnimalGallery: FC<AnimalProps> = ({ animals }) => {
                       href={`animals/${animalData.animalId}`}
                       className="t-link t-link--base heading-clr d-inline-block"
                     >
-                      {animalData.name}
+                      {animalData.animalSpecies.speciesName}
                     </a>
                   </h5>
                   <span className="d-block sm-text text-center">
