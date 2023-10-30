@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { AnimalObj } from "../../models/animal";
+import {  StarRounded } from "@mui/icons-material";
 
 interface AnimalProps {
   animal: AnimalObj | undefined;
@@ -53,54 +54,11 @@ const AnimalDetailSection: FC<AnimalProps> = ({ animal }) => {
       <div className="container">
         <div className="row g-4">
           <div className="col-md-7 col-lg-8">
-            <h4 className="mt-0">{animal?.name}</h4>
-            <p>
-              Suspendisse pulvinar augue ac venenatis condimentum sem libero
-              volutpat nibh nec pellentesque velide quis nunc. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-              Curae; Fusce id purus. Ut variuncidunt libero. Phasellus dolor.
-              Maecenas vestibulum mollis diam. Pellentesque ut neque.
-              Pellentesque habitant morbi tristique senectus et netus malesuada
-              fames ac turpis egestas.
-            </p>
-            <h4>Fascinating Facts</h4>
-        
-            <div className="row g-4">
-              <div >
-                <ul className="list list--base">
-                  <li>    Flamingos get their beautiful pink colour from the small animals
-                that they eat. </li>
-                  <li>In the Zoo we feed a specially prepared diet that
-                keeps them pink.</li>
-                <li>Flamingos often stand on one leg. One reason is
-                that it keeps the folded leg warm.</li>
-                </ul>
-              </div>
-            
-            </div>
-            <h4>Physical Characteristics</h4>
-            <p>
-              fames ac turpis egestas. Ut non enim eleifend felis pretium
-              feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac
-              habitasse platea dictumst. Curabitur at lacus ac velit ornare
-              lobortis. Curabitur a felis in nunc fringilla tristique. Morbi
-              mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam
-              vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget,
-              semper nec, quam. Sed hendrerit. Morbi ac felis.
-            </p>
-            <h4>Habitat/Diet</h4>
-            <p>
-              Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-              Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-              fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
-              consequat, leo eget bibendum sodales, augue velit cursus nunc,
-              quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-              Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id,
-              metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis
-              hendrerit fringilla.
-            </p>
-            <h4>Social Behavior</h4>
-            <p>
+            <h3 style={
+              {color:"#86c305"}
+            } className="mt-0">{animal?.name}</h3>
+            <h4><StarRounded/> Social Behavior</h4>
+            <p style={{fontSize:"19px"}}>
               {animal?.behavior}
             </p>
            

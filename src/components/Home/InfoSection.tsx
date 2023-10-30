@@ -16,12 +16,12 @@ function InfoSection() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text--white">
-                    frequently asked questions
+                    Frequently asked questions
                   </a>
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text--white">
-                    Zoo Derection Map
+                    Zoo Direction Map
                   </a>
                 </li>
                 <li>
@@ -31,7 +31,7 @@ function InfoSection() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text--white">
-                    Zoo Rules & Gudie Line
+                    Zoo Rules & Guide Line
                   </a>
                 </li>
               </ul>
@@ -121,24 +121,24 @@ function InfoSection() {
               </h4>
               <ul className="list">
                 <li>
-                  <div className="list list--row">
+                  <div className="list list--row align-items-center">
                     <span className="info-section__icon">
                       <i className="fas fa-map-marker-alt"></i>
                     </span>
                     <p className="mb-0 text--white t-short-para">
-                      Ho Chi Minh city, a bustling Vietnamese hub of history and modernity
+                      Ho Chi Minh city, Vietnam
                     </p>
                   </div>
                 </li>
                 <li>
-                  <div className="list list--row">
+                  <div className="list list--row align-items-center">
                     <span className="info-section__icon">
                       <i className="far fa-envelope"></i>
                     </span>
                     <ul className="list" style={{ gap: "0.5rem" }}>
                       <li>
                         <p className="mb-0 text--white t-short-para">
-                          viserzoosupport24/7.com
+                          amazoo@gmail.com
                         </p>
                       </li>
                       <li>
@@ -150,7 +150,7 @@ function InfoSection() {
                   </div>
                 </li>
                 <li>
-                  <div className="list list--row">
+                  <div className="list list--row align-items-center">
                     <span className="info-section__icon">
                       <i className="fas fa-phone-alt"></i>
                     </span>

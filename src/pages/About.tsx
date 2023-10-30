@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
-=======
-import { useEffect, useState } from "react";
->>>>>>> 802d113 (done checkout feature front end)
 import agent from "../api/agent";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
@@ -12,6 +8,7 @@ import ExpertAuthoritySection from "../components/Home/ExpertAuthoritySection";
 import FactSection from "../components/Home/FactSection";
 import WelcomeSection from "../components/Home/WelcomeSection";
 import { NewsObj } from "../models/news";
+
 export default function About() {
   const [listNews, setListNews] = useState<NewsObj[]>([]);
 
@@ -23,6 +20,8 @@ export default function About() {
       })
       .catch((error) => console.log(error));
   }, []);
+
+ 
   return (
     <>
       <Banner
@@ -53,12 +52,12 @@ export default function About() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    frequently asked questions
+                    Frequently asked questions
                   </a>
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    Zoo Derection Map
+                    Zoo Direction Map
                   </a>
                 </li>
                 <li>
@@ -68,7 +67,7 @@ export default function About() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    Zoo Rules &amp; Gudie Line
+                    Zoo Rules &amp; Guide Line
                   </a>
                 </li>
               </ul>

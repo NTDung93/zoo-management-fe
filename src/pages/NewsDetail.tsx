@@ -12,7 +12,7 @@ import { useLocation } from "react-router-dom";
 import agent from "../api/agent";
 interface NewDetailProps {}
 
-const NewsDetail: FC<NewDetailProps> = ({}) => {
+const NewsDetail: FC<NewDetailProps> = () => {
   const [news, setNews] = useState<NewsObj | null>(null);
 
   const { search } = useLocation();
