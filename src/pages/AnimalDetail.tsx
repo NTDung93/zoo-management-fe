@@ -31,7 +31,6 @@ const AnimalDetail = () => {
       />
       <AnimalDetailSection animal={animal} />
       <OtherAnimalsSection currentAnimalID={animal?.animalId ?? ""} />
-
       <ImageSilderBottom />
     </>
   );

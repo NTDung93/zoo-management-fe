@@ -1,4 +1,5 @@
-import AnimalGallery from "../components/Animals/AnimalGallery";
+import { useEffect, useState } from "react";
+import agent from "../api/agent";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
@@ -6,7 +7,18 @@ import BlogSection from "../components/Home/BlogSection";
 import ExpertAuthoritySection from "../components/Home/ExpertAuthoritySection";
 import FactSection from "../components/Home/FactSection";
 import WelcomeSection from "../components/Home/WelcomeSection";
+import { NewsObj } from "../models/news";
 export default function About() {
+  const [listNews, setListNews] = useState<NewsObj[]>([]);
+
+  useEffect(() => {
+    agent.News.list()
+      .then((response) => {
+        setListNews(response);
+        console.log(response);
+      })
+      .catch((error) => console.log(error));
+  }, []);
   return (
     <>
       <Banner
@@ -37,12 +49,12 @@ export default function About() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    frequently asked questions
+                    Frequently asked questions
                   </a>
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    Zoo Derection Map
+                    Zoo Direction Map
                   </a>
                 </li>
                 <li>
@@ -52,7 +64,7 @@ export default function About() {
                 </li>
                 <li>
                   <a href="#" className="t-link t-link--base text-clr">
-                    Zoo Rules &amp; Gudie Line
+                    Zoo Rules &amp; Guide Line
                   </a>
                 </li>
               </ul>
@@ -134,7 +146,7 @@ export default function About() {
       <WelcomeSection />
       <FactSection />
       <ExpertAuthoritySection />
-      <BlogSection />
+      <BlogSection listnews={listNews} />
       <ImageSilderBottom />
     </>
   );

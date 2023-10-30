@@ -21,7 +21,7 @@ const Question: FC<QuestionProps> = ({}) => {
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
               >
-                Why Viserzoo?
+                Why AmaZoo?
               </button>
             </h2>
             <div

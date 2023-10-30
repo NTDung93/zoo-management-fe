@@ -9,9 +9,9 @@ export default function BasketSummary() {
     const dispatch = useDispatch();
     const handleClearCart = () => {
         dispatch(clearCart());
-      }
+    }
+     
     var total = 0;
-
     cartItems.forEach(item => {
         total += item.ticket.unitPrice * item.quantity;
     });
@@ -23,15 +23,15 @@ export default function BasketSummary() {
                     <TableBody>
                         <TableRow>
                             <TableCell colSpan={2}>Total</TableCell>
-                            <TableCell align="right">{currencyFormat(total)} Vnđ</TableCell>
+                            <TableCell align="right">{currencyFormat(total)} vnd</TableCell>
                         </TableRow>
                         <TableRow >
                             <TableCell colSpan={2}>
-                                <a href="/ticket" className="btn btn--sm btn--base" style={{marginRight: '1rem', backgroundColor: '#C2BFBE'}}>
+                                <a href="/ticket" className="btn btn--sm btn--base" style={{ marginRight: '1rem', backgroundColor: '#C2BFBE' }}>
                                     {" "}
                                     Continue shopping{" "}
                                 </a>
-                                <a href="#" className="btn btn--sm btn--base" style={{backgroundColor: '#E35020'}}
+                                <a href="#" className="btn btn--sm btn--base" style={{ backgroundColor: '#E35020' }}
                                     onClick={() => handleClearCart()}
                                 >
                                     {" "}
@@ -39,7 +39,7 @@ export default function BasketSummary() {
                                 </a>
                             </TableCell>
                             <TableCell align="right">
-                                <a href="#" className="btn btn--sm btn--base">
+                                <a href="/checkout" className="btn btn--sm btn--base" >
                                     {" "}
                                     Checkout{" "}
                                 </a>
