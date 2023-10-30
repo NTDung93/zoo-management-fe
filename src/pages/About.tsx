@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import agent from "../api/agent";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
@@ -8,7 +8,6 @@ import ExpertAuthoritySection from "../components/Home/ExpertAuthoritySection";
 import FactSection from "../components/Home/FactSection";
 import WelcomeSection from "../components/Home/WelcomeSection";
 import { NewsObj } from "../models/news";
-
 export default function About() {
   const [listNews, setListNews] = useState<NewsObj[]>([]);
 
@@ -20,8 +19,6 @@ export default function About() {
       })
       .catch((error) => console.log(error));
   }, []);
-
- 
   return (
     <>
       <Banner

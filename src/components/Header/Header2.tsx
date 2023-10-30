@@ -160,7 +160,6 @@ const Header2 = () => {
                                   Animals
                                 </a>
                               </li>
-                             
                               <li className="primary-menu__sub-list">
                                 <a
                                   href="/cart"
