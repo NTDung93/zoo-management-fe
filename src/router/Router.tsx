@@ -14,7 +14,7 @@ import Contact from "../pages/Contact";
 import About from "../pages/About";
 import PageNews from "../pages/PageNews";
 import Checkout from "../pages/Checkout";
-import AnimalCategory from "../pages/AnimalCategory";
+import CheckoutSuccess from "../pages/CheckoutSuccess";
 
 export const router = createBrowserRouter([
   {
@@ -24,13 +24,8 @@ export const router = createBrowserRouter([
       { path: "", element: <HomePage /> },
       { path: "animals", element: <Animals /> },
       { path: "animals/:id", element: <AnimalDetail /> },
-<<<<<<< HEAD
-      { path: "category", element: <AnimalCategory /> },
-      { path: "cart", element: <Cart /> },
-=======
       { path: "cart", element: <Cart /> },  
       { path: "checkout", element: <Checkout/> },
->>>>>>> 802d113 (done checkout feature front end)
       { path: "checkout-success", element: <CheckoutSuccess /> },
       { path: "gallery", element: <Gallery /> },
       { path: "home", element: <HomePage /> },
