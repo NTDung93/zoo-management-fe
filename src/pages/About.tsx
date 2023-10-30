@@ -1,4 +1,5 @@
-import AnimalGallery from "../components/Animals/AnimalGallery";
+import { useState, useEffect } from "react";
+import agent from "../api/agent";
 import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
@@ -6,7 +7,18 @@ import BlogSection from "../components/Home/BlogSection";
 import ExpertAuthoritySection from "../components/Home/ExpertAuthoritySection";
 import FactSection from "../components/Home/FactSection";
 import WelcomeSection from "../components/Home/WelcomeSection";
+import { NewsObj } from "../models/news";
 export default function About() {
+  const [listNews, setListNews] = useState<NewsObj[]>([]);
+
+  useEffect(() => {
+    agent.News.list()
+      .then((response) => {
+        setListNews(response);
+        console.log(response);
+      })
+      .catch((error) => console.log(error));
+  }, []);
   return (
     <>
       <Banner
@@ -134,7 +146,7 @@ export default function About() {
       <WelcomeSection />
       <FactSection />
       <ExpertAuthoritySection />
-      <BlogSection />
+      <BlogSection listnews={listNews} />
       <ImageSilderBottom />
     </>
   );
