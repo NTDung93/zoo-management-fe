@@ -71,13 +71,18 @@ const Animals = {
     // update: (animal: {}) => requests.put("/news", news),
     // delete: (id: string) => requests.delete(`/news/${id}`),
 };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Species = {
+    list: () => requests.get("AnimalSpecies/species"),
+};
 
 const Tickets = {
     list: () => requests.get("Tickets/tickets"),
 };
 
+
 const agent = {
-    News, Animals, Tickets
+    News, Animals, Tickets, Species
 };
 
 export default agent;

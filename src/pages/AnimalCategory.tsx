@@ -3,10 +3,10 @@ import EventSection from "../components/Animals/EventSection";
 import Banner from "../components/Banner/Banner";
 import agent from "../api/agent";
 import ImageSilderBottom from "../components/Bottom/ImageSliderBottom";
-import Category from "../components/Animals/Category";
 import { SpeciesObj } from "../models/species";
+import Category from "../components/Animals/Category";
 
-const Animals: FC = () => {
+const AnimalCategory: FC = () => {
   const [species, setSpecies] = useState<SpeciesObj[]>([]);
 
   useEffect(() => {
@@ -14,6 +14,7 @@ const Animals: FC = () => {
       .then((species) => setSpecies(species))
       .catch((error) => console.log(error));
   },[]);
+  
 
   return (
     <>
@@ -22,7 +23,6 @@ const Animals: FC = () => {
         singleName={"Animals"}
         pictureUrl="https://res.cloudinary.com/dpysbryyk/image/upload/v1696091217/banner/nyqamtwvezpwoczywbwt.jpg"
       />
-      {/* <AnimalGallery animals={animals} /> */}
       <Category species={species}/>
       <EventSection />
       <ImageSilderBottom />
@@ -30,4 +30,4 @@ const Animals: FC = () => {
   );
 };
 
-export default Animals;
+export default AnimalCategory;

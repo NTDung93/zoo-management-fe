@@ -27,11 +27,10 @@ const AnimalDetail = () => {
       <Banner
         pageName={animal?.name ?? "Animal detail"}
         singleName={"Animal detail"}
-        pictureUrl={animal?.image.split(", ")[0] ?? ""}
+        pictureUrl={animal?.image.split(",")[0].replace("[", "").replace("]", "") ?? ""}
       />
       <AnimalDetailSection animal={animal} />
       <OtherAnimalsSection currentAnimalID={animal?.animalId ?? ""} />
-
       <ImageSilderBottom />
     </>
   );
