@@ -8,9 +8,7 @@ const Question: FC<QuestionProps> = ({}) => {
       <div className="ps-xl-4">
         <h4 className="mt-0">Asked question befor buy ticket</h4>
         <p className="section__para">
-          Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-          Vestibulum volutpat pretium libero. Cras id dui.
-        </p>
+        Before you purchase your zoo ticket, you might have some questions in mind. We're here to provide you with all the information you need to make your visit truly enjoyable.        </p>
         <div className="accordion custom--accordion" id="faqAccordion">
           <div className="accordion-item">
             <h2 className="accordion-header">
@@ -30,10 +28,7 @@ const Question: FC<QuestionProps> = ({}) => {
               data-bs-parent="#faqAccordion"
             >
               <div className="accordion-body">
-                Fusce convallis metus id felis luctus adipiscing. Pellentesque
-                egestas neque sit amet convallis pulvinar justo nulla eleifend
-                augue ac auctor orci leo non est. Quisque incidunt tincidunt
-                erat.
+              At AmaZoo, we're dedicated to providing you with an unforgettable experience. Our zoo offers a wide range of attractions and activities that cater to visitors of all ages. From our engaging animal encounters and educational exhibits to the stunning natural surroundings, there's something for everyone to enjoy.
               </div>
             </div>
           </div>

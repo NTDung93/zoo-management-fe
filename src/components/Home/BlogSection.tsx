@@ -78,7 +78,7 @@ function BlogSection({ listnews }: Props) {
                       </li>
                       <li className="breadcrumbs__item">
                         <a href="#" className="t-link text--white t-link--base">
-                          {news.animal.name}
+                          {news.animal?.name}
                         </a>
                       </li>
                     </ul>
