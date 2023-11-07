@@ -32,7 +32,7 @@ function BlogSection({ listnews }: Props) {
 
       <div className="container">
         <div className="row g-4 justify-content-center">
-          {listnews.map((news) => (
+          {listnews.slice(0, 3).map((news) => (
             <div className="col-md-6 col-lg-4" key={news.newsId}>
               <div className="blog-post">
                 <img src={news.image} alt="image" className="blog-post__img" />
@@ -74,11 +74,6 @@ function BlogSection({ listnews }: Props) {
                       <li className="breadcrumbs__item">
                         <a href="#" className="t-link text--white t-link--base">
                           {news.animalSpecies.speciesName}
-                        </a>
-                      </li>
-                      <li className="breadcrumbs__item">
-                        <a href="#" className="t-link text--white t-link--base">
-                          {news.animal.name}
                         </a>
                       </li>
                     </ul>
