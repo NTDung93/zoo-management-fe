@@ -1,0 +1,38 @@
+.author {
+    display: flex;
+    align-items: center; /* Vertically center content */
+  }
+  
+  .author-content {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    gap: 16px; /* Add spacing between image and text */
+  }
+  
+  .author-image-container {
+    width: 100px; /* Adjust the width as needed to make it square */
+    height: 100px; /* Make it a square by setting the same height as width */
+    overflow: hidden; /* Clip the image to the square shape */
+  }
+  
+  .author-image {
+    max-width: 10%; /* Make the image fit inside the square container */
+    display: block; /* Remove extra spacing caused by inline images */
+    border-radius: 0; /* Remove border-radius to keep it square */
+  }
+  
+  .author-info {
+    display: flex;
+    flex-direction: column; /* Stack name and description vertically */
+  }
+  
+  .author-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .author-description {
+    font-size: 14px;
+    color: #666;
+  }
+  

@@ -2,7 +2,6 @@ import { FC, useEffect, useState } from "react";
 import imgcate from "./../assets/images/people-5.jpg";
 import imgmemberCard from "./../assets/images/member-card-1.png";
 
-import Content from "../components/NewDetail/Content";
 import NewCate from "../components/NewDetail/NewCate";
 import Tags from "../components/NewDetail/Tags";
 import Banner from "../components/Banner/Banner";
@@ -10,6 +9,7 @@ import BackToTop from "../components/BackToTop/BackToTop";
 import { NewsObj } from "../models/news";
 import { useLocation } from "react-router-dom";
 import agent from "../api/agent";
+import RealContent from "../components/NewDetail/RealContent";
 interface NewDetailProps {}
 
 const NewsDetail: FC<NewDetailProps> = () => {
@@ -37,12 +37,13 @@ const NewsDetail: FC<NewDetailProps> = () => {
 
       <div className="section">
         <div className="container">
-          <div className="row g-4">
+          <div className="row g-4" style={{display: 'flex'}}>
             <div className="col-md-7 col-lg-8">
-              <Content
+              {/* <Content
                 imgmain={news?.animal.image ?? ""}
                 imgsection={news?.employee.image ?? ""}
-              />
+              /> */}
+              <RealContent news={news}/>
             </div>
             <div className="col-md-5 col-lg-4">
               <div className="ps-xl-4 ps-xxl-5">
@@ -92,7 +93,6 @@ const NewsDetail: FC<NewDetailProps> = () => {
                       <h5 className="widget__title">News Tag</h5>
                       <ul className="list list--row flex-wrap">
                         <Tags nameTag={news?.animalSpecies.speciesName ?? ""} />
-                        <Tags nameTag={news?.animal.name ?? ""} />
                         <Tags nameTag="Birds" />
                         <Tags nameTag="Live Came" />
                         <Tags nameTag="Water World" />

@@ -270,10 +270,10 @@ const Header2 = () => {
 
                             <li className="primary-menu__list text-center">
                               <a
-                                href="sign-up.html"
+                                href="/ticket"
                                 className="btn btn--md btn--base w-100"
                               >
-                                Donate Now
+                                Buy ticket
                               </a>
                             </li>
                           </ul>
