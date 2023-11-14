@@ -16,8 +16,9 @@ const Contact = () => {
             <div className="col-md-4">
               <h4 className="mt-0">How can i help you?</h4>
               <p className="section__para">
-                Phasellus consectetuer vestibulum eetusbibendum mattis non.
-                Vestibulum fringilla.
+                We are here to provide information and support for your needs.
+                Feel free to reach out with any questions or assistance you
+                require.
               </p>
               <ul className="list">
                 <li>
@@ -36,7 +37,7 @@ const Contact = () => {
                       <i className="far fa-envelope"></i>
                     </span>
                     <span className="d-block flex-grow-1">
-                      support@mail.com
+                      amazoo@gmail.com
                     </span>
                   </div>
                 </li>
@@ -46,7 +47,7 @@ const Contact = () => {
                       <i className="fas fa-globe"></i>
                     </span>
                     <span className="d-block flex-grow-1">
-                      www.viserzoo.com
+                      www.amazoo.com
                     </span>
                   </div>
                 </li>

@@ -55,7 +55,7 @@ const Content: FC<ContentProps> = ({ imgmain, imgsection }) => {
       <div className="mt-5">
         <div className="row g-4">
           <div className="col-lg-6">
-            <img src={imgsection} alt="image" className="img-fluid" />
+            <img src={imgsection} style={{width: '5rem'}} alt="image" className="img-fluid" />
           </div>
           <div className="col-lg-6">
             <div className="ps-xl-4">

@@ -15,8 +15,8 @@ const ExpertAuthoritySection = () => {
                   Our Expert <span>Authority</span>
                 </h2>
                 <p className="section__para mx-auto">
-                  Phasellus consectetuer vestibulum elit. Ametusbibendum mattis
-                  non. Vestibulum fringilla pede sit ameugue.
+                  Meet our team of accomplished experts and authorities in the
+                  field of wildlife and conservation. 
                 </p>
               </div>
             </div>

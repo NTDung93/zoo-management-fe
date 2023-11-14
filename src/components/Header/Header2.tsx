@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/configureStore";
 const Header2 = () => {
-  const {totalQuantity} = useSelector((state: RootState) => state.cart);
+  const {cartItems} = useSelector((state: RootState) => state.cart);
+  const itemCount = cartItems?.reduce((sum, item) => sum + item.quantity, 0)
 
   useEffect(() => {
     const isSticky = () => {
@@ -258,21 +259,21 @@ const Header2 = () => {
                         {/* User Login  */}
                         <div className="mx-3 ms-lg-auto me-lg-0">
                           <ul className="list primary-menu primary-menu--alt" style={{ display: 'flex', alignItems: 'center' }}>
-                            <IconButton component={Link} to='/basket' size="large" edge='start' color='primary' sx={{ mr: 2 }}>
+                            <IconButton component={Link} to='/cart' size="large" edge='start' color='primary' sx={{ mr: 2 }}>
                               <Badge color='secondary' style={{ color: '#86c305', display: 'flex', alignItems: 'center' }}>
                                 <ShoppingCart style={{transform: 'scale(1.2)'}}/>
                                 <div style={{ transform: 'scale(0.7) translateY(-13px)', fontWeight: '500' }}>
-                                  {totalQuantity}
+                                  {itemCount}
                                 </div>
                               </Badge>
                             </IconButton>
 
                             <li className="primary-menu__list text-center">
                               <a
-                                href="sign-up.html"
+                                href="/ticket"
                                 className="btn btn--md btn--base w-100"
                               >
-                                Donate Now
+                                Buy ticket
                               </a>
                             </li>
                           </ul>

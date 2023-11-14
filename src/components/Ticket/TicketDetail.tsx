@@ -16,8 +16,7 @@ const TicketDetail: FC<TicketDetailProps> = ({ tickets }) => {
         <div className="zoo-box">
           <h4 className="mt-0">Buy Your zoo ticket</h4>
           <p className="section__para">
-            Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-            Vestibulum volutpat pretium libero. Cras id dui.
+          Buy your zoo ticket now! Enjoy a day filled with fascinating animal encounters, interactive exhibits, and beautiful landscapes at our zoo. 
           </p>
 
           <Grid container spacing={2}>
