@@ -8,8 +8,8 @@ export default function CheckoutSuccess() {
         <>
             <BackToTop />
             <Banner
-                pageName={"Checkout Success"}
-                singleName={"Checkout Success"}
+                pageName={"Checkout Status"}
+                singleName={"Checkout Status"}
                 pictureUrl="https://res.cloudinary.com/dnk5fcjhn/image/upload/v1696253385/images/thu-an-thuc-vat/eagle/s2bwmtgsgqkv762k3lat.jpg"
             />
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4rem' }}>
