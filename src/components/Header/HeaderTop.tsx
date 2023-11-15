@@ -34,32 +34,6 @@ export default function HeaderTop() {
               </a>
               {/* Logo End */}
             </div>
-            <div className="col-lg-4">
-              <ul className="list list--row justify-content-end">
-                <li>
-                  <a
-                    href="/sign-in"
-                    className="t-link t-link--light text--white list list--row align-items-center"
-                  >
-                    <span className="d-block">
-                      <i className="fas fa-user"></i>
-                    </span>
-                    <span className="d-block">Sign In</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="t-link t-link--light text--white list list--row align-items-center"
-                  >
-                    <span className="d-block">
-                      <i className="fas fa-globe"></i>
-                    </span>
-                    <span className="d-block">English</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
