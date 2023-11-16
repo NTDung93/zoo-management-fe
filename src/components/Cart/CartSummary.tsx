@@ -4,17 +4,23 @@ import { RootState } from "../../store/configureStore";
 import { currencyFormat } from "../../utils/utils";
 import { clearCart } from "./cartSlice";
 
-export default function BasketSummary() {
+interface Props {
+    entryDate: Date;
+}
+
+export default function BasketSummary({ entryDate }: Props) {
     const { cartItems } = useSelector((state: RootState) => state.cart);
     const dispatch = useDispatch();
     const handleClearCart = () => {
         dispatch(clearCart());
     }
-     
+
     var total = 0;
     cartItems.forEach(item => {
         total += item.ticket.unitPrice * item.quantity;
     });
+
+    const currentDate = new Date();
 
     return (
         <>
@@ -39,10 +45,14 @@ export default function BasketSummary() {
                                 </a>
                             </TableCell>
                             <TableCell align="right">
-                                <a href="/checkout" className="btn btn--sm btn--base" >
-                                    {" "}
-                                    Checkout{" "}
-                                </a>
+                                {entryDate >= currentDate ? (
+                                    <a href="/checkout" className="btn btn--sm btn--base">
+                                        {" "}
+                                        Checkout{" "}
+                                    </a>
+                                ) : (
+                                    <span className="btn btn--sm btn--base disabled-text" style={{backgroundColor: 'gray'}}>Checkout</span>
+                                )}
                             </TableCell>
                         </TableRow>
                     </TableBody>

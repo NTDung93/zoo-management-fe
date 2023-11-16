@@ -14,9 +14,11 @@ import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import dayjs from "dayjs";
 import { toast } from "react-toastify";
+import { useState } from "react";
 
 export default function Cart() {
   const { cartItems } = useSelector((state: RootState) => state.cart);
+  const [entryDate, setEntryDate] = useState<Date>(new Date());
   const dispatch = useDispatch();
 
   const handleRemoveItem = (ticket: TicketObj) => {
@@ -34,8 +36,10 @@ export default function Cart() {
   const handleEntryDateChange = (entryDate: Date, ticket: TicketObj) => {
     if (entryDate < new Date()) {
       toast.error(`Entry date must be this day or after this day!`, { position: "bottom-left", autoClose: 2000 });
+      setEntryDate(entryDate);
     } else {
       dispatch(updateEntryDate({ entryDate: entryDate, ticket: ticket }));
+      setEntryDate(entryDate);
     }
   }
 
@@ -116,7 +120,7 @@ export default function Cart() {
             <Grid container>
               <Grid item xs={6} />
               <Grid item xs={6}>
-                <BasketSummary />
+                <BasketSummary entryDate={entryDate}  />
               </Grid>
             </Grid>)}
         </div>
